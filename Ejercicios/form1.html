@@ -10,26 +10,46 @@
 
     <body>
 
-        <h1>Formulario</h1>
+        <h1>Formulario</h1> 
 
-        <form>
+        <form action="form1.html" method="post" >
 
-            <label>Nombre: </label> <input id="name" name="Nombre" type="text">
+            <label for="name">Nombre: </label> <input id="name" name="Nombre" type="text">
 
-            <br>
-            <br>
-
-            <label>Apellidos: </label> <input id="ap" name="Apellidos" type="text">
+            <!-- Para poder relacionar el label con el input, lo que pongamos en el foe del label
+            tiene que ser el id del input. -->
 
             <br>
             <br>
 
-            <label>Edad: </label> <input id="age" name="Edad" type="number">
+            <label for="ap">Apellidos: </label> <input id="ap" name="Apellidos" type="text">
 
             <br>
             <br>
 
-            <label>E-mail</label> <input id="email" name="Email" type="email">
+            <label for="age">Edad: </label> <input id="age" name="Edad" type="number">
+
+            <br>
+            <br>
+
+            <label for="email">E-mail</label> <input id="email" name="Email" type="email">
+
+            <br>
+            <br>
+
+            <select name="genero">
+
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otros">Otros...</option>
+
+            </select>
+              
+            <br>
+            <br>
+
+            <input type="radio" value="1" name="radio"> Mayor de edad
+            <input type="radio" value="2" name="radio"> Menor de edad
 
             <br>
             <br>
