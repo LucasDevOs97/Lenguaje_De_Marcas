@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>CV</title>
+
+    </head>
+
+    <body>
+
+        <h1>Rellena tu CV</h1> 
+
+        <form>
+            <label for="nomCV">Nombre</label>
+            <br>
+            <input id="nomCV" name="nomCV" type="text" maxlength="25">
+
+            <br>
+
+            <label for="apCV">Apellidos</label>
+            <br>
+            <input id="apCV" name="apCV" type="text" maxlength="35">
+
+            <br>
+
+            <label for="passCV">Contraseña</label>
+            <br>
+            <input id="passCV" name="passCV" type="password">
+
+            <br>
+
+            <label for="dniCV">DNI</label>
+            <br>
+            <input id="dniCV" name="dniCV" type="text" maxlength="9" placeholder="Ej: 12345678A">
+            <br><br>
+
+            Sexo
+            <br>
+            <input type="radio" value="1" name="radio"> Hombre
+            <br>
+            <input type="radio" value="2" name="radio"> Mujer
+            <br><br>
+
+            Incluir foto <input type="file" accept="image/*">
+            <br><br>
+
+            <input type="checkbox" id="sub" name="sub" value="true" checked>
+            <label for="vehicle1"> Subscribirse al boletín de novedades</label><br>
+
+            <input id="btnSave" type="button" value="Guardar cambios">
+
+            <input type="reset" value="Borrar todo">
+
+        </form>
+
+    </body>
+
+</html>
