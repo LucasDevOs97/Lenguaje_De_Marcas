@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Info sobre producto</title>
+
+    </head>
+
+    <body>
+
+        <h1>Información sobre el producto</h1>
+
+        
+
+            <legend>Datos básicos</legend>
+
+            <form action="formProdu.html" method="get">
+
+                <fieldset>
+
+                    <legend>Datos básicos</legend>
+
+                    <label for="nom">Nombre</label>
+                    <br>
+                    <input id="nom" name="nom" type="text">
+                    <br><br>
+
+                    <label for="desc">Descripción</label>
+                    <br>
+                    <textarea id="desc" name="desc"></textarea>
+                    <br><br>
+
+                    <label for="foto">Foto</label> <input id="foto" name="foto" type="file" accept="image/*">
+                    <br>
+
+                    <input type="checkbox" id="views" name="views">
+                    <label for="sub"> Subscribirse al boletín de novedades</label>
+                    <br>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Datos económicos</legend>
+
+                    <label for="price">Precio</label> <input id="price" name="price" type="text"> €       
+                    <label for="impuestos">Impuestos</label>            
+                    <select name="impuesto" id="impuesto">
+                        <option value="1" selected>4%</option>
+                        <option value="2">6%</option>
+                        <option value="3">9%</option>
+                        <option value="4">Otros</option>
+                    </select>
+
+                    <br>
+
+                    Promoción
+
+                    <br>
+
+                </fieldset>
+
+
+            </form>
+
+        
+
+    </body>
+
+</html>
