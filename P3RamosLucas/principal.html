@@ -10,6 +10,8 @@
 
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
+        <!-- <link rel="stylesheet" href="css/practica.css"> -->
+
     </head>
 
     <body>
@@ -21,12 +23,20 @@
             <ul class="indice">
 			
                 <li><a id="indice" href="#refArgs">Argumento</a></li>
-                <li><a href="#refPersonajes">Descripción de los persoanjes</a></li>
+                <li><a href="#refPersonajes">Persoanjes</a>
+                
+                    <ul>
+
+                        <li><a href="#refInfo">Más información</a></li>
+
+                    </ul>
+
+                </li>
                 <li><a href="#refTemporadas">Temporadas</a></li>
                 <li><a href="#refCriticas">Críticas</a></li>
                 <li><a href="refReferencias">Referencias</a></li>
                 <li><a href="#refComentario">Comentario</a></li>
-                <li><a href="#refTrailer"</a></li>
+                <li><a href="#refTrailer">Tráiler</a></li>
                 
             </ul>
 
@@ -36,6 +46,12 @@
 
         <div>
 
+            <a href="https://es.wikipedia.org/wiki/Castle" target="blank">
+
+                <img src="img/Castle.jpg" alt="Título de la serie">
+
+            </a>
+
             <h2><a id="refArgs">Argumento</a></h2>
 
             <p>
@@ -44,13 +60,13 @@
             en serie imite los métodos de sus novelas.
             </p>
 
+            <!-- Se le dará estilo más adelante para que concuerde con lo web -->
             <aside>Richard Castle es interpretado por Nathan Fillion y Katherine Beckett por Stana Katic</aside>
 
-            <a href="https://es.wikipedia.org/wiki/Castle" target="blank">
+            <img src="img/Richard.jpg">
+            <img src="img/Katherine.jpg">
 
-                <img src="img/Castle.jpg" alt="Título de la serie">
-
-            </a>
+            <br><br><br>
             
             <br>
             <a href="#indice">Volver al índice</a>
@@ -61,35 +77,34 @@
 
         <div>
 
+            <h2>Personajes</h2>
+
             <!--Lista de los personajes -->
 
             <ul class="indice">
 				
-                <li><a id="refPersonajes">Descripción de los persoanjes</a></li>
+                <li><a id="refPersonajes">Nombre de los persoanjes</a></li>
                     <ul>
 					
-                        <li><a>Richard Castle</a></li>
-                        <li><a>Katherine Beckett</a></li>
-                        <li><a>Javier Espósito</a></li>
-                        <li><a>Kevin Ryan</a></li>
-                        <li><a>Alexis Castle</a></li>
-                        <li><a>Martha Rodgers</a></li>
-                        <li><a>Lanie Parish</a></li>
-                        <li><a>Roy Mongomery</a></li>
-                        <li><a>Vicoria Gates</a></li>
+                        <li>Richard Castle</li>
+                        <li>Katherine Beckett</li>
+                        <li>Javier Espósito</li>
+                        <li>Kevin Ryan</li>
+                        <li>Alexis Castle</li>
+                        <li>Martha Rodgers</li>
+                        <li>Lanie Parish</li>
+                        <li>Roy Mongomery</li>
+                        <li>Vicoria Gates</li>
 						
                     </ul>
                 
             </ul>
 
-            <br><br><br>
-
-            <a href="secundaria.html">Más información sobre los personajes</a>
-
-            <br><br><br>
-
-            <hr>
             <br>
+
+            <a id="refInfo" href="secundaria.html">Más información sobre los personajes</a>
+
+            <br><br><br>
 
             <a href="#indice">Volver al índice</a>
 
@@ -100,8 +115,11 @@
         <hr>
 
         <div>
+
+            <h2><a id="refTemporadas">Temporadas</a></h2>
+
             <table border="1">
-                <caption><a id="refTemporadas">TEMPORADAS</a></caption>
+                <caption>TEMPORADAS</caption>
                 <thead>
                     <th>Temporada</th>
                     <th>Episodios</th>
@@ -231,9 +249,15 @@
                     <br>
                     <textarea id="opinion"></textarea>
 
+                    <br>
+
+                    <input id="btnSave" type="submit" value="Subir opinión">
+
                 </fieldset>
 
             </form>
+
+            <a href="#indice">Volver al índice</a> 
 
         </div>
 
@@ -249,7 +273,7 @@
 
         <hr>
 
-            <h2><a id="refReferencias">REFERENCIAS</a></h2>
+            <h2><a id="refReferencias">Referencias</a></h2>
 			
 			<nav>
 			
@@ -279,7 +303,7 @@
 
                 Página web realizada por: <a href="mailto:l.ramos@liceolapaz.net">l.ramos@liceolapaz.net</a> 
 
-                <br>
+                <br><br><br>
 
                 <a href="#indice">Volver al índice</a>
 
