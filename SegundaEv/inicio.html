@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Práctica 3</title>
+
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+        <link rel="stylesheet" href="inicio.css"> 
+
+    </head>
+
+    <body>
+
+        <nav>
+
+            <h1>Castle</h1>
+
+            <ul class="indice">
+			
+                <li><a id="indice" href="#refArgs">Argumento</a></li>
+                <li><a href="#refPersonajes">Persoanjes</a>
+                
+                    <ul>
+
+                        <li><a href="#refInfo">Más información</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="#refTemporadas">Temporadas</a></li>
+                <li><a href="#refCriticas">Críticas</a></li>
+                <li><a href="refReferencias">Referencias</a></li>
+                <li><a href="#refComentario">Comentario</a></li>
+                <li><a href="#refTrailer">Tráiler</a></li>
+                
+            </ul>
+
+        </nav>
+
+        <hr>
+
+        <div>
+
+            <a href="https://es.wikipedia.org/wiki/Castle" target="blank">
+
+                <img src="img/Castle.jpg" alt="Título de la serie">
+
+            </a>
+
+            <h2><a id="refArgs">Argumento</a></h2>
+
+            <p>
+            Richard Castle es un exitoso escritor de novela negra que hace equipo con la inspectora de policía 
+            de homicidios Kate Beckett, para intentar resolver crímenes en Nueva York después de que un asesino
+            en serie imite los métodos de sus novelas.
+            </p>
+
+            <!-- Se le dará estilo más adelante para que concuerde con lo web -->
+            <aside>Richard Castle es interpretado por Nathan Fillion y Katherine Beckett por Stana Katic</aside>
+
+            <img id="imgAside" src="img/Richard.jpg" alt="Nathan Fillion">
+            <img id="imgAside" src="img/Katherine.jpg" alt="Stana Katic">
+
+            <br><br><br>
+            
+            <br>
+            <a href="#indice">Volver al índice</a>
+
+        </div>
+
+        <hr>
+
+        <div>
+
+            <h2>Personajes</h2>
+
+            <!--Lista de los personajes -->
+
+            <ul class="indice">
+				
+                <li><a id="refPersonajes">Nombre de los persoanjes</a></li>
+                    <ul>
+					
+                        <li>Richard Castle</li>
+                        <li>Katherine Beckett</li>
+                        <li>Javier Espósito</li>
+                        <li>Kevin Ryan</li>
+                        <li>Alexis Castle</li>
+                        <li>Martha Rodgers</li>
+                        <li>Lanie Parish</li>
+                        <li>Roy Mongomery</li>
+                        <li>Vicoria Gates</li>
+						
+                    </ul>
+                
+            </ul>
+
+            <br>
+
+            <a id="refInfo" href="secundaria.html">Más información sobre los personajes</a>
+
+            <br><br><br>
+
+            <a href="#indice">Volver al índice</a>
+
+        </div>
+
+        <br>
+
+        <hr>
+
+        <div>
+
+            <h2><a id="refTemporadas">Temporadas</a></h2>
+
+            <table border="1">
+                <caption>TEMPORADAS</caption>
+                <thead>
+                    <th>Temporada</th>
+                    <th>Episodios</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <a href="#indice">Volver al índice</a>
+
+        </div>
+
+        <hr>
+
+
+        <div>
+
+            <h2><a id="refCriticas">CRÍTICAS</a></h2>
+
+            <blockquote>
+
+                <p class="autor">Maureen Ryan.</p> 
+                <p>
+                    "Teniendo en cuenta que la situación de amor-odio entre Beckett y Castle es bastante
+                    predecible, el éxito de 'Castle' podría encontrarse en la calidad de sus tramas de misterio, y es alentador que el segundo
+                    episodio de la serie sea mejor que el primero"
+                </p>
+
+                <p class="autor">Robert Bianco.</p> 
+                <p>
+                    "Probablemente no te mantendrá toda la noche de pie descifrando las complejidades
+                    del misterio, pero no te aburrirá ni insultará tu inteligencia. 'Castle' existe para explotar el atractivo de sus estrellas y 
+                    la divertida interacción entre sus personajes, y lo hace con una eficacia admirable(...)"
+                </p>
+
+            </blockquote>
+
+            <br/>
+
+            <a href="#indice">Volver al índice</a> 
+
+            <hr>
+
+            <iframe src="secundaria.html" title="Personajes"></iframe>
+
+        </div>
+
+        <hr>
+
+        <div>
+
+            <h2><a id="refComentario">Dejar comentario:</a></h2>
+
+            <form action="principal.html" method="post">
+
+                <fieldset>
+
+                    <label for="nom">Nombre</label>
+                    <br>
+                    <input id="nom" type="text" maxlength="16">
+
+                    <br>
+
+                    <label for="fecCom">Fecha del comentario:</label>
+                    <br>
+                    <input id="fecCom" name="fec" type="date">
+
+                    <br>
+
+                    <label for="age">Edad:</label>
+                    <br>
+                    <input id="age" name="age" type="number">
+
+                    <br>
+
+                    <label for="genero">Género:</label>
+                    <br>
+                    <select>
+
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>No binario</option>
+                        <option>Sin especificar</option>
+
+                    </select>
+
+                    <br>
+
+
+                    <input type="checkbox" id="politica" name="politica" value="true" checked>
+                    <label for="politica">Acepto la política de privacidad.</label>
+                    <br>
+                    <input type="checkbox" id="sub" name="sub" value="true" checked>
+                    <label for="sub">Deseo suscribirme para recibir más noticias</label>
+
+                    <br>
+
+                    <label for="opinion">Opinión:</label>
+                    <br>
+                    <textarea id="opinion"></textarea>
+
+                    <br><br>
+
+                    <input id="btnSave" type="submit" value="Subir opinión">
+
+                </fieldset>
+
+            </form>
+
+            <a href="#indice">Volver al índice</a> 
+
+        </div>
+
+        <div>
+
+            <h2><a id="refTrailer">Tráiler</a></h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xjrObBtzGYg" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+        </div>
+
+        <hr>
+
+            <h2><a id="refReferencias">Referencias</a></h2>
+			
+			<nav>
+			
+				<ul>
+					<li>Información sobre los personajes:</li>
+					<ul>
+					
+						<li><a href="https://es.wikipedia.org/wiki/Castle" target="blank">Wikipedia</a></li>
+						
+					</ul>
+					
+					<li>Página de las críticas: </li>
+					
+					<ul>
+					
+						<li><a href="https://www.filmaffinity.com/es/pro-reviews.php?movie-id=186493" target="blank">Críticas</a></li>
+						
+					</ul>
+					
+				</ul>
+			
+			</nav>
+			
+			<hr>
+
+            <footer>
+
+                Página web realizada por: <a href="mailto:l.ramos@liceolapaz.net">l.ramos@liceolapaz.net</a> 
+
+                <br><br><br>
+
+                <a href="#indice">Volver al índice</a>
+
+            </footer>
+
+    </body>
+
+</html>

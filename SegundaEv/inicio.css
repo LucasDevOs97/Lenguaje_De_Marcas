@@ -1,0 +1,17 @@
+h1, h2 {
+    color: palevioletred;
+    font-weight: bold;
+}
+
+p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+caption {
+    font-weight: bold;
+}
