@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    background-color: #58D3F7;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #58ACFA;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px;
+}
+
