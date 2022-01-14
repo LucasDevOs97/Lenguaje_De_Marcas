@@ -12,6 +12,14 @@ body {
     background-color: #C5E1A5;
 }
 
+a:link {
+    color: #C679AC;
+}
+
+a:visited {
+    color: #d41896;
+}
+
 #img2 {
     float: right;
 }

@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+}
+
+.indice {
+    background-color: pink;
+    margin: 10px;
+}
+
+.indice li {
+    background-color: violet;
+    margin: 5px;
+}
+
+.referencias {
+    background-color: violet;
+    margin: 10px;
+}
+
+.referencias li {
+    background-color: lightpink;
+    margin: 5px;
+}
