@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title> El Parchis Prueba </title>
+
+        <link rel="stylesheet" href="../css/parchis.css">
+
+    </head>
+
+    <body>
+
+        <h1 id="principal"> El Parchis </h1>
+
+        <section>
+
+            <h2 id="reglas"> Reglas del juego Parchís</h2>
+
+            <p>El Parchís es un juego de carreras, heredero del juego de origen indio denominado Parchisi.</p>
+
+            <p>Se utilizan dados para determinar el avance que las fichas realizan a través de un recorrido en forma de cruz. 
+            El objetivo es completar el recorrido con todas las fichas. </p>
+
+            <b><ins>Movimiento de las fichas</ins></b>
+            <ol>
+            
+                <li>En caso de tirar un 5 y tener fichas en casa, una de ellas entra en juego obligatoriamente situándose en la casilla de salida. </li>
+                <li> Las fichas avanzan siguiendo el recorrido en <label class="resaltado">sentido inverso</label> a las agujas del reloj.</li>
+                <li> Cuando una ficha completa una vuelta al tablero y llega a la casilla que conecta con el pasillo de su color, 
+            se desvía hacia la casilla destino (hacia el centro del tablero).</li>
+                <li>En caso de tirar un 6 y tener todas las fichas del mismo color fuera de casa, se avanzan 7 casillas. </li>
+                <li>El jugador que ha <label class="resaltado">obtenido un 6 juega de nuevo</label>.</li>
+            <li>En cada casilla del recorrido puede haber un máximo de dos fichas. Una ficha no puede jugarse si el 
+            movimiento le llevara a una casilla en la que ya hay dos fichas. </li>
+            <li>Una ficha no puede moverse si para completar el avance tuviera que atravesar una barrera. 
+            Las barreras son pares de fichas de un mismo color situadas en la misma casilla. </li>
+            <li>Para alcanzar el final del recorrido es necesario avanzar el número exacto de casillas que restan 
+            hasta completarlo. No es posible mover la ficha si el número del dado es superior. </li>
+            <li>Cuando una ficha completa su recorrido, el jugador debe avanzar 10 casillas con otra de sus fichas. </li>
+            <li>Puede darse el caso de que todas las fichas estén bloqueadas (por estar en casa, o tras una barrera,
+            o en el final del recorrido). En este caso, simplemente no se realiza ningún movimiento. </li>
+            <li>
+                <label id="capturas">Capturas:</label>
+                    <ol>
+                        <li> Las casillas de salida y las casillas marcadas con un círculo son seguros, donde las capturas no son posibles. 
+                Por tanto, en los seguros pueden coincidir dos fichas de diferente color. </li>
+                        <li>Si en la casilla de salida se encuentran dos fichas de diferente color y una nueva ficha sale de su casa, la ficha de diferente color 
+                (o si ambas lo son, la última ficha que hubiera llegado a la casilla) resulta capturada. </li>
+                        <li> Las fichas comidas vuelven a su casa, de manera que vuelven a entrar en juego cuando el jugador obtiene un 5 en su tirada. </li>
+                        <li>
+                ¡Tres veces 6!
+                            <ul>
+                                <li> Si un jugador obtiene un 6 tres veces consecutivas, el tercer movimiento no se realiza, y la ficha movida 
+                    con el segundo 6 vuelve a su casa, salvo que ya hubiese alcanzado el pasillo final del recorrido. </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+
+            </ol>
+
+        </section>
+
+        <section class="section2">
+        
+            <b><ins>Tablero, dados y fichas</ins></b>
+            <p>Tradicionalmente en el parchís participan 4 jugadores, 
+            cada uno de ellos utilizando un color diferente: amarillo, azul, rojo y verde. 
+            Se emplean 4 fichas de cada color, y cada jugador utiliza un dado. </p>
+            <p>El tablero de parchís tiene varias zonas diferenciadas:</p>
+            <ul>
+                <li> Zonas de salida o casas, situadas en las esquinas del tablero, de los cuatro colores. </li>
+                <li> Un recorrido común de 68 casillas por el que avanzan todas las fichas. </li>
+                <li> Pasillo y casilla final de los 4 colores, que convergen en el centro del tablero desde los cuatro laterales.</li>
+            </ul>
+
+        </section>
+        
+
+    <h2>Consejos para el juego</h2>
+    <p><i>¡Descubre otras modalidades, como el parchís por parejas! </i></p>
+
+    </body>
+</html>

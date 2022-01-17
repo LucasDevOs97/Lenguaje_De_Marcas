@@ -1,16 +1,34 @@
-h1 {
+#principal {
     text-align: center;
     background-color: #58D3F7;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
+    border: 1px;
+    border-color: darkblue;
 }
 
-h2 {
+#reglas {
     text-align: center;
-    color: #58ACFA;
+    background-color: #58ACFA;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
+    border: 1px;
+    border-color: darkblue;
     padding: 3px;
 }
 
+.resaltado {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#capturas {
+    font-style: italic;
+    background-color: #58ACFA;
+}
+
+.section2 b ins {
+    background-color: #58D3F7;
+    color: blue;
+}

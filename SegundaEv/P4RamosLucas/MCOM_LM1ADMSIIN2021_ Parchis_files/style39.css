@@ -1,0 +1,976 @@
+@font-face { font-family: 'Sofia'; src: url('fonts/sofia.svg') format('svg'), url('fonts/sofia.woff') format('woff'); }
+@font-face { font-family: 'Ubuntu Condensed'; src: url('fonts/ubuntu.svg') format('svg'), url('fonts/ubuntu.woff') format('woff'); }
+@font-face { font-family: 'PT Sans'; src: url('fonts/ptsans.svg') format('svg'), url('fonts/ptsans.woff') format('woff'); }
+@font-face { font-family: 'Marcellus SC'; src: url('fonts/marcellus.svg') format('svg'), url('fonts/marcellus.woff') format('woff'); }
+@font-face { font-family: 'Philosopher'; src: url('fonts/philosopher.svg') format('svg'), url('fonts/philosopher.woff') format('woff'); }
+@font-face { font-family: 'Tiza'; src: url('fonts/tiza.svg') format('svg'), url('fonts/tiza.woff') format('woff'); }
+@font-face { font-family: 'Bree-Thin'; src: url('fonts/bree_thin.svg') format('svg'), url('fonts/bree_thin.woff') format('woff'); }
+
+.fancybox {}
+.fancybox-media {}
+.fancybox-thumbs {}
+.imagenSinEstilo { padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important; }
+.hideme { display: none; }
+body#tinymce .hideme { display: block; background-color: #f5f5f5; border: 1px dashed #cecece; padding: 15px; margin-bottom: 15px; }
+tr.barraHorizontal, td.barraHorizontal { border-bottom: 1px solid #000; }
+tr.barraVerticalHorizontal, td.barraVerticalHorizontal { border-left: 1px solid #000; border-bottom: 1px solid #000; }
+tr.barraVertical, td.barraVertical { border-left: 1px solid #000; }
+select { max-width: 400px; }
+
+/* basic floats */
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clearFloat { clear: both; }
+
+/* basic margins */
+/* top */
+.margin10Top { margin-top: 10px !important; }
+.margin15Top { margin-top: 15px !important; }
+.margin20Top { margin-top: 20px !important; }
+.margin25Top { margin-top: 25px !important; }
+.margin30Top { margin-top: 30px !important; }
+/* right */
+.margin10Right { margin-right: 10px !important; }
+.margin15Right { margin-right: 15px !important; }
+.margin20Right { margin-right: 20px !important; }
+.margin25Right { margin-right: 25px !important; }
+.margin30Right { margin-right: 30px !important; }
+/* bottom */
+.margin10Bottom { margin-bottom: 10px !important; }
+.margin15Bottom { margin-bottom: 15px !important; }
+.margin20Bottom { margin-bottom: 20px !important; }
+.margin25Bottom { margin-bottom: 25px !important; }
+.margin30Bottom { margin-bottom: 30px !important; }
+/* left */
+.margin10Left { margin-left: 10px !important; }
+.margin15Left { margin-left: 15px !important; }
+.margin20Left { margin-left: 20px !important; }
+.margin25Left { margin-left: 25px !important; }
+.margin30Left { margin-left: 30px !important; }
+
+/*#page-course-view-topics div.course-content .side { display: inline !important; }
+#page-course-view-topics .section  { max-height: 300px; overflow: hidden; }*/
+
+/* ocultar tipos de actividad en un cuestionario */
+label[for="qtype_calculated"] { display: none !important; }
+label[for="qtype_calculatedmulti"] { display: none !important; }
+label[for="qtype_calculatedsimple"] { display: none !important; }
+label[for="qtype_randomsamatch"] { display: none !important; }
+label[for="qtype_opaque"] { display: none !important; }
+label[for="qtype_oumultiresponse"] { display: none !important; }
+label[for="qtype_pmatch"] { display: none !important; }
+label[for="qtype_multianswer"] { display: none !important; }
+label[for="qtype_varnumeric"] { display: none !important; }
+label[for="qtype_varnumericset"] { display: none !important; }
+label[for="module_choice"] { display: none !important; }
+label[for="module_survey"] { display: none !important; }
+/*label[for="module_lti"] { display: none !important; }*/
+label[for="module_lesson"] { display: none !important; }
+label[for="module_checklist"] { display: none !important; }
+label[for="module_sociallearning"] { display: none !important; }
+/*label[for="module_folder"] { display: none !important; }*/
+label[for="module_imscp"] { display: none !important; }
+
+/* abrir y cerrar pestañas */
+.collapse-abrir { display: block; position: relative; top: -27px; left: 583px; cursor: pointer; width: 81px; height: 70px; margin: 4px 0 0 10px; background: url(img/collapse-abrir.jpg); }
+.collapse-cerrar { display: block; position: relative; top: -27px; left: 583px; cursor: pointer; width: 81px; height: 70px; margin: 4px 0 0 10px; background: url(img/collapse-cerrar.jpg); }
+
+.collapseCurso-abrir { display: block; cursor: pointer; width: 35px; height: 30px; background: url(img/epigrafe-abrir.png); }
+.collapseCurso-cerrar { display: block; cursor: pointer; width: 35px; height: 30px; background: url(img/epigrafe-cerrar.png); }
+
+/* course tag */
+.tagCourse { background-image: url('img/course-header.png'); width: 683px; height: 47px; overflow: hidden; }
+.tagCourseInt { width: 673px; height: 23px; padding: 6px 0 0 10px; font-size: 12pt; font-family: 'Ubuntu Condensed'; font-weight: normaml; overflow: hidden; }
+.tagFooter { background-image: url('img/course-footer.png'); margin: 0 0 15px 0; width: 683px; height: 22px; overflow: hidden; }
+/* course tag radius grey */
+.tagCourseRadius { background-image: url('img/course-header-radius.png'); width: 683px; height: 30px; margin: 15px 0 0 0; overflow: hidden; }
+.tagCourseRadiusInt { width: 673px; height: 32px; padding: 5px 0 0 15px; font-size: 12pt; font-family: 'Ubuntu Condensed'; font-weight: normaml; overflow: hidden; }
+
+/* tabs curso */
+.tabCabeceraCurso { width: 685px; min-height: 65px; margin-top: 15px; margin-bottom: 0; overflow: hidden; }
+.tabTituloCurso { float: left; width: 635px; height: 50px; margin: 5px 0 0 15px; }
+.tabTituloCurso h2 { font-family: Bree-Thin; font-size: 14pt; color: #FFF; line-height: 0; margin-top: 15px; }
+.tabCollapse { float: left; width: 35px; height: 30px; margin: 23px 0 0 0; overflow: hidden; }
+.tabPieCurso { width: 685px; height: 46px; margin-top: -10px; margin-bottom: 15px; }
+/* matematicas */
+.tabCabeceraCursoMatematicas { background: url(img/epigrafe-mates-cabecera.png) top left no-repeat; }
+.tabPieMatematicas { background: url(img/epigrafe-mates-pie.png) top left no-repeat; }
+/* CCSS */
+.tabCabeceraCursoCCSS { background: url(img/epigrafe-ccss-cabecera.png) top left no-repeat; }
+.tabPieCCSS { background: url(img/epigrafe-ccss-pie.png) top left no-repeat; }
+/* lengua */
+.tabCabeceraCursoLengua { background: url(img/epigrafe-lengua-cabecera.png) top left no-repeat; }
+.tabPieLengua { background: url(img/epigrafe-lengua-pie.png) top left no-repeat; }
+/* CCNN */
+.tabCabeceraCursoCCNN { background: url(img/epigrafe-ccnn-cabecera.png) top left no-repeat; }
+.tabPieCCNN { background: url(img/epigrafe-ccnn-pie.png) top left no-repeat; }
+/* Cono */
+.tabCabeceraCursoCono { background: url(img/epigrafe-cono-cabecera.png) top left no-repeat; }
+.tabPieCono { background: url(img/epigrafe-cono-pie.png) top left no-repeat; }
+/* Catalan */
+.tabCabeceraCursoCatalan { background: url(img/epigrafe-catalan-cabecera.png) top left no-repeat; }
+.tabPieCatalan { background: url(img/epigrafe-catalan-pie.png) top left no-repeat; }
+
+/* subepigrafes */
+.subEpigrafe { width: 685px; height: 102px; margin: 15px 0 -10px 0; overflow: hidden; }
+.subEpigrafeInt { width: 380px; height: 25px; margin: 61px 0 0 150px; text-align: center; }
+.subEpigrafeInt h3 { font-family: Bree-Thin; font-size: 13pt; color: #FFF; line-height: 70%; }
+/* matematicas */
+.subEpigrafeConectaMatematicas { background: url(img/epigrafe-matematicas-conectaconelmundo.png) top center no-repeat; }
+.subEpigrafeProfundizaMatematicas { background: url(img/epigrafe-matematicas-profundiza.png) top center no-repeat; }
+.subEpigrafeAmpliaMatematicas { background: url(img/epigrafe-matematicas-ampliainformacion.png) top center no-repeat; }
+/* CCSS */
+.subEpigrafeConectaCCSS { background: url(img/epigrafe-ccss-conectaconelmundo.png) top center no-repeat; }
+.subEpigrafeProfundizaCCSS { background: url(img/epigrafe-ccss-profundiza.png) top center no-repeat; }
+.subEpigrafeAmpliaCCSS { background: url(img/epigrafe-ccss-ampliainformacion.png) top center no-repeat; }
+/* lengua */
+.subEpigrafeConectaLengua { background: url(img/epigrafe-lengua-conectaconelmundo.png) top center no-repeat; }
+.subEpigrafeProfundizaLengua { background: url(img/epigrafe-lengua-profundiza.png) top center no-repeat; }
+.subEpigrafeAmpliaLengua { background: url(img/epigrafe-lengua-ampliainformacion.png) top center no-repeat; }
+/* CCNN */
+.subEpigrafeConectaCCNN { background: url(img/epigrafe-ccnn-conectaconelmundo.png) top center no-repeat; }
+.subEpigrafeProfundizaCCNN { background: url(img/epigrafe-ccnn-profundiza.png) top center no-repeat; }
+.subEpigrafeAmpliaCCNN { background: url(img/epigrafe-ccnn-ampliainformacion.png) top center no-repeat; }
+/* cono */
+.subEpigrafeConectaCono { background: url(img/epigrafe-cono-conectaconelmundo.png) top center no-repeat; }
+.subEpigrafeProfundizaCono { background: url(img/epigrafe-cono-profundiza.png) top center no-repeat; }
+.subEpigrafeAmpliaCono { background: url(img/epigrafe-cono-ampliainformacion.png) top center no-repeat; }
+/* Catalan */
+.subEpigrafeConectaCatalan { background: url(img/epigrafe-catalan-conectaconelmundo.png) top center no-repeat; }
+.subEpigrafeProfundizaCatalan { background: url(img/epigrafe-catalan-profundiza.png) top center no-repeat; }
+.subEpigrafeAmpliaCatalan { background: url(img/epigrafe-catalan-ampliainformacion.png) top center no-repeat; }
+
+/* subepigrafes stripe */
+/* ccss */
+.subEpigrafeStripeCCSS { width: 345px; height: 64px; background: url(img/subepigrafe-ccss.png); margin-top: 10px; margin-bottom: -15px; overflow: hidden; }
+.subEpigrafeStripeCCSSInt { width: 325px; margin: 6px 10px 0 10px; color: #FFF; font-family: Philosopher; font-size: 12pt; }
+/* ccnn */
+.subEpigrafeStripeCCNN { width: 345px; height: 64px; background: url(img/subepigrafe-ccnn.png); margin-top: 10px; margin-bottom: -15px; overflow: hidden; }
+.subEpigrafeStripeCCNNInt { width: 325px; margin: 6px 10px 0 10px; color: #FFF; font-family: Philosopher; font-size: 12pt; }
+/* lengua */
+.subEpigrafeStripeLengua { width: 345px; height: 64px; background: url(img/subepigrafe-lengua.png); margin-top: 10px; margin-bottom: -15px; overflow: hidden; }
+.subEpigrafeStripeLenguaInt { width: 325px; margin: 6px 10px 0 10px; color: #FFF; font-family: Philosopher; font-size: 12pt; }
+/* conocimiento del medio */
+.subEpigrafeStripeCono { width: 345px; height: 64px; background: url(img/subepigrafe-cono.png); margin-top: 10px; margin-bottom: -15px; overflow: hidden; }
+.subEpigrafeStripeConoInt { width: 325px; margin: 6px 10px 0 10px; color: #FFF; font-family: Philosopher; font-size: 12pt; }
+/* matematicas */
+.subEpigrafeStripeMates { width: 345px; height: 64px; background: url(img/subepigrafe-mates.png); margin-top: 10px; margin-bottom: -15px; overflow: hidden; }
+.subEpigrafeStripeMatesInt { width: 325px; margin: 6px 10px 0 10px; color: #FFF; font-family: Philosopher; font-size: 12pt; }
+/* catalan */
+.subEpigrafeStripeCatalan { width: 345px; height: 64px; background: url(img/subepigrafe-catalan.png); margin-top: 10px; margin-bottom: -15px; overflow: hidden; }
+.subEpigrafeStripeCatalanInt { width: 325px; margin: 6px 10px 0 10px; color: #FFF; font-family: Philosopher; font-size: 12pt; }
+
+/* tabs list course */
+.tabCourse { width: 685px; height: 113px; background-image: url(img/bg-epigrafe.png); margin-bottom: -65px; overflow: hidden; }
+.tabCourseInt { position: relative; top: 0; left: 25px; }
+.tabCourseLeft { float: left; width: 5px; height: 25px; background: url(img/bg-epigrafe-izq.jpg); overflow: hidden; }
+.tabCourseRight { float: left; width: 5px; height: 25px; background: url(img/bg-epigrafe-dch.jpg); overflow: hidden; }
+.tabCourseCenter { float: left; min-height: 40px; padding: 12px 20px 0 20px; font-family: Ubuntu Condensed; font-size: 12pt; overflow: hidden; }
+.tabCourseMaths { background: url(img/bg-epigrafe-maths.jpg) repeat-x; color: #9a2818; }
+.tabCourseCiencias { background: url(img/bg-epigrafe-ciencias.jpg) repeat-x; color: #7d5d0c; }
+.tabCourseLengua { background: url(img/bg-epigrafe-lengua.jpg) repeat-x; color: #414386; }
+.tabCourseCCNN { background: url(img/bg-epigrafe-ccnn.jpg) repeat-x; color: #3a6b15; }
+.tabCourseCono { background: url(img/bg-epigrafe-cono.jpg) repeat-x; color: #868c11; }
+.tabCourseCatalan { background: url(img/bg-epigrafe-catalan.jpg) repeat-x; color: #2D449C; }
+
+/* sub tabs in course */
+.tabSubCourse { width: 380px; height: 72px; background: url(img/bg-sub-epigrafe.jpg); margin-bottom: -35px; }
+.tabSubCourseInt { float: right; margin-right: 20px; margin-top: -2px; }
+.tabSubCourseIzq { float: left; width: 3px; height: 25px; background: url(img/bg-sub-epigrafe-izq.jpg); }
+.tabSubCourseDch { float: left; width: 3px; height: 25px; background: url(img/bg-sub-epigrafe-dch.jpg); }
+.tabSubCourseCenter { float: left; height: 21px; background: #FFF; padding: 0 20px 0 20px; font-family: Ubuntu Condensed; font-size: 12pt; }
+.tabSubCourseMaths { border-bottom: 4px solid #ec634f; color: #9a2818; }
+.tabSubCourseCiencias { border-bottom: 4px solid #F0AB00; color: #7d5d0c; }
+.tabSubCourseLengua { border-bottom: 4px solid #7577c0; color: #414386; }
+.tabSubCourseCCNN { border-bottom: 4px solid #65bd24; color: #3a6b15; }
+.tabSubCourseCono { border-bottom: 4px solid #d9e403; color: #868c11; }
+
+/* legend tab course */
+.tabLegendCourse { width: 522px; height: 124px; margin: 20px 0 -85px 90px; overflow: hidden; }
+.tabLegendCourseInt { position: relative; top: 0; left: 25px; left: 30%; }
+.tabLegendCourseLeft { float: left; width: 5px; height: 25px; background: url(img/bg-epigrafe-izq.jpg); overflow: hidden; }
+.tabLegendCourseRight { float: left; width: 5px; height: 25px; background: url(img/bg-epigrafe-dch.jpg); overflow: hidden; }
+.tabLegendCourseCenter { float: left; min-height: 40px; padding: 12px 20px 0 20px; font-family: Ubuntu Condensed; font-size: 12pt; overflow: hidden; }
+.tabLegendCourseMundo { background: url(img/bg-leyenda-conecta.jpg); }
+.tabLegendCourseProfundiza { background: url(img/bg-leyenda-profundiza.jpg); }
+.tabLegendCourseAmplia { background: url(img/bg-leyenda-amplia.jpg); }
+.tabLegendCourseBorderMaths { width: 100%; margin-left: 90px; margin-top: 15px; border-bottom: 4px solid #ec6450; }
+
+/* legend */
+.leyendaCurso { width: 653px; height: 34px; margin: 15px 0 0 0; overflow: hidden; }
+.leyendaCursoCont { width: 100%; height: 26px; overflow: hidden; }
+.leyendaCursoContInt { float: left; height: 26px; background-image: url(img/course-sub-header-left.png); overflow: hidden; }
+.leyendaCursoImg { float: left; margin: 0 10px 0 0; }
+.leyendaCursoTitle { display: block; float: left; font-size: 12pt; font-family: 'Ubuntu Condensed'; font-weight: normal; line-height: 120%; margin: 4px 5px 0 0; }
+.leyendaCursoGradient { float: left; width: 57px; height: 26px; background-image: url(img/course-sub-header-right.png); overflow: hidden; }
+.leyendaCursoFooter { width: 100%; height: 3px; background-image: url(img/course-sub-footer.png); overflow: hidden; }
+
+/* image with caption */
+.contentBox { width: 653px; margin: 0 15px 0 15px; overflow: hidden; }
+.contentPhoto { display: table; z-index: 1; margin: 0; overflow: hidden; }
+.contentPhotoCaption { background: #cecece; font-size: 8pt; padding: 5px 10px 5px 10px; margin-top: -15px; z-index: 10; position: relative; overflow: hidden; }
+.contentPhotoCaption a { color: #000; }
+
+/* limitar alto plantillas 
+.plantMaxHeight { max-height: 600px; } */
+
+/* bloque asociativos */
+.asociativoContenedor { width: 685px; overflow: hidden; }
+.asociativoCabecera { width: 685px; height: 105px; position: relative; }
+.asociatiboBarraContenedor { width: 685px; height: 12px; overflow: hidden; }
+.asociativoXtendVerde { float: left; width: 171.25px; height: 12px; background: #69be28; }
+.asociativoXtendRosa { float: left; width: 171.25px; height: 12px; background: #d10074; }
+.asociativoXtendRojo { float: left; width: 171.25px; height: 12px; background: #009fda; }
+.asociativoXtendAmarillo { float: left; width: 171.25px; height: 12px; background: #f0ab00; }
+.asociativoBarraVolumen { position: relative; top: 0; left: 0; width: 685px; height: 5px; background: #fff; opacity:0.3; }
+.asociativoContenido { width: 655px; margin-bottom: 10px; background: #fbfbfb; box-shadow: 2px 0px 5px #cecece; font-family: Bree-Thin; font-size: 12pt; padding: 15px; text-align: justify; }
+.asociativoContenido p { margin: 0; }
+.asociativoContenido img { padding: 15px; background: url(img/pixel-transparente.png); box-shadow:1px 1px 7px 3px #cecece inset; margin-bottom: 10px; max-width: 625px; }
+.asociativoDiscusion { background: url(img/asociativaDiscusion.png); }
+.asociativoAdjuntar { background: url(img/asociativaAdjuntar.png); }
+.asociativoBuscar { background: url(img/asociativaBuscar.png); }
+.asociativoElaborar { background: url(img/asociativaElaborar.png); }
+.asociativoEnviar { background: url(img/asociativaEnviar.png); }
+.asociativoEscribir { background: url(img/asociativaEscribir.png); }
+.asociativoExamen { background: url(img/asociativaExamen.png); }
+.asociativoLeer { background: url(img/asociativaLeer.png); }
+.asociativoPregunta { background: url(img/asociativaPregunta.png); }
+.asociativoReflexion { background: url(img/asociativaReflexion.png); }
+
+/* bloque azul asociativo */
+.addonAsociativoCont { width: 100%; min-height: 30px; background: #009ee0 url(img/bg-crystal.png) repeat-x top left; background-size: 100% 50%; filter:alpha(opacity=90); opacity: 0.9; border-top-left-radius: 7px; border-top-right-radius: 10px; position: absolute; bottom: 0; }
+.addonAsociativoCont p { font-family: Bree-Thin; color: #FFF; font-weight: bold; font-size: 12pt; margin: 5px 5px 0 10px; text-align: center; }
+
+/* bullets iconos */
+ul.iconos { list-style-type: none; padding: 0; margin: 0; overflow: hidden; }
+ul.iconos li { background-repeat: no-repeat; background-position: top left; padding-left: 60px; text-align: justify; list-style-type: none; margin-bottom: 15px; min-height: 45px; overflow: hidden; }
+ul.iconos li span { display: table-cell; vertical-align: middle; height: 45px; overflow: hidden; }
+.iconoMapa { background: url(img/iconoMapa.png); }
+.iconoAmpliar { background: url(img/iconoAmpliar.png); }
+.iconoObjetivos { background: url(img/iconObjetivos.png); }
+.iconoContenidos { background: url(img/iconoContenidos.png); }
+.iconoCriteriosdeEvaluacion { background: url(img/iconoCriteriosevaluacion.png); }
+.iconoDefinicion { background: url(img/iconoDefinicion.png); }
+.iconoEjemplo { background: url(img/iconoEjemplo.png); }
+.iconoEnlace { background: url(img/iconoEnlace.png); }
+.iconoEsquema { background: url(img/iconoEsquema.png); }
+.iconoFormula { background: url(img/iconoFormula.png); }
+.iconoIdea { background: url(img/iconoIdea.png); }
+.iconoImportante { background: url(img/iconoImportante.png); }
+.iconoRecuerda { background: url(img/iconoRecuerda.png); }
+.iconoSabiasQue { background: url(img/iconoSabiasque.png); }
+.iconoMapa img, .iconoAmpliar img, .iconoObjetivos img, .iconoContenidos img, .iconoCriteriosdeEvaluacion img,
+.iconoDefinicion img, .iconoEjemplo img, .iconoEnlace img, .iconoEsquema img, .iconoFormula img,
+.iconoIdea img, .iconoImportante img, .iconoRecuerda img, .iconoSabiasQue img
+{ padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important; }
+
+/* avisos */
+.avisosBarraContenedor { margin-bottom: 10px; }
+.avisosContenidos { width: 625px; margin-left: 30px; font-family: Bree-Thin; font-size: 12pt; text-align: justify; overflow: hidden; }
+.avisosContenidos p { margin: 0; }
+.avisosContenidos img { padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important; }
+/* avisos matematicas */
+.avisosContenedorMatematicas { width: 685px; background: #fff7f6; }
+.avisosBarraMatematicas { width: 685px; height: 6px; background: url(img/stripeMatematicas.png); overflow: hidden; }
+.avisosBarraFlechaAbajoMatematicas { width: 14px; height: 9px; background: url(img/stripeMatematicasPuntaAbajo.png); margin-left: 15px; overflow: hidden; }
+.avisosBarraFlechaArribaMatematicas { width: 14px; height: 9px; background: url(img/stripeMatematicasPuntaArriba.png); margin-left: 659px; overflow: hidden; }
+/* avisos ciencias */
+.avisosContenedorCiencias { width: 685px; background: #fef9ed; }
+.avisosBarraCiencias { width: 685px; height: 6px; background: url(img/stripeCiencias.png); overflow: hidden; }
+.avisosBarraFlechaAbajoCiencias { width: 14px; height: 9px; background: url(img/stripeCienciasPuntaAbajo.png); margin-left: 15px; overflow: hidden; }
+.avisosBarraFlechaArribaCiencias { width: 14px; height: 9px; background: url(img/stripeCienciasPuntaArriba.png); margin-left: 659px; overflow: hidden; }
+/* avisos lengua */
+.avisosContenedorLengua { width: 685px; background: #f5f5ff; }
+.avisosBarraLengua { width: 685px; height: 6px; background: url(img/stripeLengua.png); overflow: hidden; }
+.avisosBarraFlechaAbajoLengua { width: 14px; height: 9px; background: url(img/stripeLenguaPuntaAbajo.png); margin-left: 15px; overflow: hidden; }
+.avisosBarraFlechaArribaLengua { width: 14px; height: 9px; background: url(img/stripeLenguaPuntaArriba.png); margin-left: 659px; margin-top: 5px; overflow: hidden; }
+/* avisos ciencias naturales */
+.avisosContenedorCCNN { width: 685px; background: #f2ffe9; }
+.avisosBarraCCNN { width: 685px; height: 6px; background: url(img/stripeCCNN.png); overflow: hidden; }
+.avisosBarraFlechaAbajoCCNN { width: 14px; height: 9px; background: url(img/stripeCCNNPuntaAbajo.png); margin-left: 15px; overflow: hidden; }
+.avisosBarraFlechaArribaCCNN { width: 14px; height: 9px; background: url(img/stripeCCNNPuntaArriba.png); margin-left: 659px; overflow: hidden; }
+/* avisos conocimiento del medio */
+.avisosContenedorCono { width: 685px; background: #feffe3; }
+.avisosBarraCono { width: 685px; height: 6px; background: url(img/stripeCono.png); overflow: hidden; }
+.avisosBarraFlechaAbajoCono { width: 14px; height: 9px; background: url(img/stripeConoPuntaAbajo.png); margin-left: 15px; overflow: hidden; }
+.avisosBarraFlechaArribaCono { width: 14px; height: 9px; background: url(img/stripeConoPuntaArriba.png); margin-left: 659px; overflow: hidden; }
+/* llengua catalana */
+.avisosContenedorCatalan { width: 685px; background: #f5f5ff; }
+.avisosBarraCatalan { width: 685px; height: 6px; background: url(img/stripeCatalan.png); overflow: hidden; }
+.avisosBarraFlechaAbajoCatalan { width: 14px; height: 9px; background: url(img/stripeCatalanPuntaAbajo.png); margin-left: 15px; overflow: hidden; }
+.avisosBarraFlechaArribaCatalan { width: 14px; height: 9px; background: url(img/stripeCatalanPuntaArriba.png); margin-left: 659px; overflow: hidden; }
+
+/* block subject */
+#subjectContainer { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; }
+#subjectLetterCont { float: left; width: 55px; height: 50px; border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-top-left-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; text-align: center; overflow: hidden; }
+.subjectLetter { font-size: 32pt; line-height: 120%; font-family: Philosopher; color: #FFF; margin: 0; }
+#subjectTitleCont { float: left; width: 630px; height: 40px; overflow: hidden; }
+.subjectTitle { font-family: 'Ubuntu Condensed'; font-size: 16pt; color: #666666; font-weight: normal; line-height: 120%; margin: 8px 10px 0 10px; }
+#subjectBarColor { float: left; width: 630px; height: 10px; overflow: hidden; }
+.subjectBgHistoryLetter { background: #F0AB00 url(img/bg-crystal.png) top left repeat-x;  }
+.subjectBgHistory { background-color: #F0AB00;  }
+.subjectBgCCSSLetter { background: #F0AB00 url(img/bg-crystal.png) top left repeat-x;  }
+.subjectBgCCSS { background-color: #F0AB00;  }
+.subjectBgMathsLetter { background: #ec634f url(img/bg-crystal.png) top left repeat-x;  }
+.subjectBgMaths { background-color: #ec634f;  }
+.subjectBgLenguaLetter { background: #7577c0 url(img/bg-crystal.png) top left repeat-x;  }
+.subjectBgLengua { background-color: #7577c0;  }
+.subjectBgCCNNLetter { background: #65bd24 url(img/bg-crystal.png) top left repeat-x;  }
+.subjectBgCCNN { background-color: #65bd24;  }
+.subjectBgConoLetter { background: #BFC320 url(img/bg-crystal.png) top left repeat-x;  }
+.subjectBgCono { background-color: #BFC320;  }
+.subjectBgCatalanLetter { background: #213a98 url(img/bg-crystal.png) top left repeat-x;  }
+.subjectBgCatalan { background-color: #213a98;  }
+/* subject principal asignaturas  */
+#subjectPrincipalMates { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; background: #d95744; border-radius: 5px; box-shadow: 5px -7px 10px 0px #4c4c4c inset; }
+.subjectTituloPrincipalMates { color: #fff; }
+#subjectPrincipalCCSS { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; background: #d0980d; border-radius: 5px; box-shadow: 5px -7px 10px 0px #4c4c4c inset; }
+.subjectTituloPrincipalCCSS { color: #fff; }
+#subjectPrincipalCCNN { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; background: #4c9416; border-radius: 5px; box-shadow: 5px -7px 10px 0px #4c4c4c inset; }
+.subjectTituloPrincipalCCNN { color: #fff; }
+#subjectPrincipalLengua { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; background: #5759a6; border-radius: 5px; box-shadow: 5px -7px 10px 0px #4c4c4c inset; }
+.subjectTituloPrincipalLengua { color: #fff; }
+#subjectPrincipalCono { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; background: #aeb123; border-radius: 5px; box-shadow: 5px -7px 10px 0px #4c4c4c inset; }
+.subjectTituloPrincipalCono { color: #fff; }
+#subjectPrincipalCatalan { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; background: #2d449c; border-radius: 5px; box-shadow: 5px -7px 10px 0px #4c4c4c inset; }
+.subjectTituloPrincipalCatalan { color: #fff; }
+
+/* cuaderno */
+.cuadernoContenedor { width: 685px; box-shadow: 1px 0px 10px #cecece; background: url(img/cuadernoBg.jpg); border-radius: 5px; overflow: hidden; }
+.cuadernoContInt { width: 663px; margin: 10px auto; }
+.cuadernoHeader { width: 663px; height: 12px; background: url(img/cuadernoHeader.png); }
+.cuadernoFooter { width: 663px; height: 12px; background: url(img/cuadernoFooter.png); }
+.cuadernoContenido { width: 663px; min-height: 120px; background: url(img/cuadernoBgHoja.png); font-family: Bree-Thin; color: #2b2b2b; font-size: 12pt; text-align: justify; line-height: 130%; }
+.cuadernoContenido img { padding: 15px; background: url(img/pixel-transparente.png); box-shadow:1px 1px 7px 3px #cecece inset; margin-bottom: 10px; max-width: 245px; margin-left: auto; margin-right: auto; }
+.cuadernoHoja1 { float: left; width: 336px; overflow: hidden; }
+.cuadernoHoja1Int { width: 295px; margin: 0 auto; overflow: hidden; }
+.cuadernoHoja2 { float: left; width: 327px; overflow: hidden; }
+.cuadernoHoja2Int { width: 275px; margin: 0 auto; overflow: hidden; }
+.cuadernoHoja1Int p, .cuadernoHoja2Int p { margin: 0; }
+
+/* hoja */
+.hojaContenedor { width: 685px; box-shadow: 1px 0px 10px #cecece; overflow-x: hidden;}
+.hojaInicioFin { width: 685px; height: 12px; background: url(img/hojaInicionFin.jpg); overflow: hidden; }
+.hojaContenido { width: 685px; min-height: 200px; background: url(img/hojaBg.jpg); }
+.hojaContenido img { padding: 15px; background: url(img/pixel-transparente.png); box-shadow:1px 1px 7px 3px #cecece inset; margin-bottom: 10px; max-width: 570px; }
+.hojaContenidoInt { margin-left: 70px; margin-right: 15px; padding: 0 0 10px 0; font-family: Bree-Thin; color: #2b2b2b; font-size: 12pt; text-align: justify; line-height: 130%; }
+
+/* bloque revista */
+.revistaEscritorio { width: 685px; background: url(img/revistaBgEscritorio.png) no-repeat; }
+.revistaEspacioBoton { float: left; width: 44px; height: 423px; }
+.revistaBotonAnterior { cursor: pointer; position: relative; top: 365px; left: 5px; width: 44px; height: 44px; background: url(img/revistaBotonAnterior.png); overflow: hidden; }
+.revistaBotonSiguiente { cursor: pointer; position: relative; top: 365px; right: 5px; width: 44px; height: 44px; background: url(img/revistaBotonSiguiente.png); overflow: hidden; }
+.revistaContenido { float: left; width: 574px; margin: 23px 11px 0 12px; }
+
+.revistaMarcoContenedor { position: relative; float: left; width: 277px; height: 403px; border: 5px solid #fed102; margin: 10px 0 0 0; background-size: 277px 403px !important; overflow: hidden; }
+.revistaLogoPeq { width: 277px; height: 71px; background: url(img/revistaLogoPeq.png); overflow: hidden; margin: 15px 0 0 0; }
+.revistaPortadaTitulo { position: absolute; bottom: 0; width: 100%; max-height: 150px;  background: rgba(255, 255, 255, 0.3); box-shadow: 0px -2px 5px 0px #343434; overflow: hidden; margin: 15px 0 0 0; }
+.revistaPortadaTituloInt { margin: 5px 10px 10px 10px; text-align: center; }
+.revistaPortadaTituloInt p { font-family: Philosopher; font-size: 20pt; color: #FFF; text-shadow: #000 0.1em 0.1em 0.2em; line-height: 120%; margin: 0; }
+.revistaDerecha { float: right; }
+
+.revistaFondoBlanco { background: #FFF; }
+.revistaArticuloLogo { width: 277px; height: 17px; background: url(img/revistaArticuloLogo.png); margin: 10px 0 0 0; }
+.revistaArticuloContenido { width: 257px; margin: 15px 1px 0 10px; }
+.revistaArticuloTitulo { border-top: 2px solid #fed102; border-bottom: 2px solid #fed102; padding: 5px 0 5px 0; }
+.revistaArticuloTitulo p { font-family: Philosopher; font-size: 16pt; text-align: center; text-transform: uppercase; margin: 0; }
+.revistaArticuloTexto { margin: 15px 0 0 0; text-align: justify; }
+.revistaArticuloTexto p { font-family: Philosopher; font-size: 11pt; color: #343434; margin: 0; line-height: 120%; }
+
+.revistaEscritorioGrande { width: 685px; background: url(img/revistaBgEscritorioGrande.png) no-repeat; overflow: hidden; }
+.revistaGrandeMarcoContenedor { position: relative; float: left; width: 564px; height: 403px; border: 5px solid #fed102; margin: 10px 0 0 0; background-size: 564px 403px !important; overflow: hidden; }
+.revistaPortadaTituloGrandeInt { margin: 5px 10px 10px 10px; text-align: justify; }
+.revistaPortadaTituloGrandeInt p { font-family: Philosopher; font-size: 12pt; color: #FFF; text-shadow: #000 0.1em 0.1em 0.2em; line-height: 140%; margin: 0; }
+.revistaLogoGrande { float: right; width: 129px; height: 70px; background: url(img/revistaLogoGrande.png); overflow: hidden; margin: 15px 15px 0 0; }
+.revistaPortadaGrandeTitulo { float: left; max-width: 410px; margin: 20px 10px 0 0; overflow: hidden; }
+.revistaPortadaGrandeTitulo p { font-family: Philosopher; font-size: 20pt; text-align: center; line-height: 120%; margin: 0; text-shadow: 1px -1px #f0f0f0 }
+.revistaEspacioPie { height: 40px; overflow: hidden; }
+
+/* bloque texturas ccss */
+.bloqueCCSSTexturas { width: 683px; min-height: 100px; border: 1px solid #dedede; }
+.bloqueCCSSTexturas img { padding: 15px; background: url(img/pixel-transparente.png); box-shadow:1px 1px 7px 3px #928157 inset; margin-bottom: 10px; }
+.bloqueCCSSTexturas p { font-family: Calibri; color: #000; font-size: 12pt; text-align: justify; }
+.bloqueCCSSTexturasInt { margin: 10px; }
+.bloqueCCSSTexturasPiel { background: url(img/piel.jpg); }
+.bloqueCCSSTexturasPapel { background: url(img/papel.jpg); }
+.bloqueCCSSTexturasPiedra { background: url(img/piedra.jpg); }
+.bloqueCCSSTexturasMar { background: url(img/mar.jpg); }
+.bloqueCCSSTexturasLadrillo { background: url(img/ladrillo.jpg); }
+.bloqueCCSSTexturasHoja { background: url(img/hoja.jpg); }
+.bloqueCCSSTexturasNubes { background: url(img/nubes.jpg); }
+.bloqueCCSSTexturasGotas { background: url(img/gotas.jpg); }
+			
+/* bloque periodico */
+.bloquePeriodico { width: 683px; min-height: 300px; background: url(img/periodico.jpg); border: 1px solid #adadad; }
+.bloquePeriodicoInt { margin: 15px; }
+.bloquePeriodicoTitulo p {font-family: Philosopher; font-size: 55pt; color: #000; text-align: center; margin: 10px 0 0 0; padding: 0; line-height: 100%;}
+.bloquePeriodicoInfo { height: 20px; margin-top: 15px; margin-bottom: 15px; border-top: 4px solid #000; border-bottom: 3px solid #000; }
+.bloquePeriodico33 { float: left; width: 33%; }
+.bloquePeriodico33 p { font-family: Georgia; font-size: 11pt; color: #000; margin: 0; padding: 0; line-height: 120%; }
+.bloquePeriodicoContenido p { font-family: Calibri; font-size: 13pt; color: #000; text-align: justify; }
+.bloquePeriodicoContenido img { border: 1px solid #000; }
+.bloquePeriodicoContenido50 { float: left; width: 315px; }
+.bloquePeriodicoContenido50 img { border: 1px solid #000; }
+.bloquePeriodicoBordeDcha { border-right: 2px solid #000; padding-right: 10px; margin-right: 10px; }
+			
+/* bloque ipad */
+.bloqueiPad { width: 685px; height: 546px; background: url(img/ipad.jpg); overflow: hidden; }
+.bloqueiPadInt { width: 565px; height: 421px; margin: 63px 0 0 67px; overflow: auto; overflow-x: hidden; -ms-overflow-x: hidden; }
+.bloqueiPadTitulo { background: url(img/ipad-titulo.jpg) no-repeat; overflow: hidden; }
+.bloqueiPadTitulo p { font-family: Ubuntu Condensed; font-size: 13pt; color: #fff; text-align: center; margin-top: 4px; }
+.bloqueiPadContenido { margin: 0 30px 0 15px; overflow: hidden; font-family: Philosopher; font-size: 12pt; color: #353535; line-height: 140%; text-align: justify; margin-top: 4px; }
+.bloqueiPadContenido p { font-family: Philosopher; font-size: 12pt; color: #353535; line-height: 140%; text-align: justify; margin-top: 4px; }
+
+/* bloque pizarra */
+.bloquePizarra { width: 685px; height: 441px; background: url(img/pizarra.jpg); overflow: hidden; }
+.bloquePizarraInt { width: 663px; height: 399px; overflow: auto; overflow-x: hidden; -ms-overflow-x: hidden; margin: 20px 0 0 19px; }
+.bloquePizarraPos { margin: 10px 33px 10px 15px; }
+.bloquePizarraTitulo p { font-family: Tiza; font-size: 13pt; color: #fff; margin-top: 4px; }
+.bloquePizarraContenido p { font-family: Sofia; font-size: 13pt; color: #fff; text-align: justify; margin-top: 4px; }
+.bloquePizarraContenido img { padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important; }
+
+/* block full parchment */
+.fullParchmentCont { width: 685px; height: 534px; background-image: url(img/pergamino-1.png); overflow: hidden; }
+.fullParchmentInt { width: 683px; height: 534px; margin: 0 0 0 1px; overflow: hidden; }
+.fullParchmentPos { width: 500px; height: 460px; overflow: hidden; margin: 50px 0 0 90px; font-family: Philosopher; font-size: 13pt; color: #666; line-height: 140%; text-align: justify; }
+
+/* block history book */
+.historyBookCont { width: 685px; min-height: 187px; background: url(img/bg-gradient-grey.jpg) left top no-repeat, url(img/bg-gradient-grey-footer.jpg) left bottom no-repeat; background-repeat: no-repeat; padding: 0 0 15px 0; overflow: hidden; }
+.historyBookTitleCont { width: 683px; background: url(img/bg-history-title.jpg) top left repeat-x; min-height: 40px; border: 1px solid #dedede; overflow: hidden; }
+.historyBookTitle { font-family: 'Marcellus'; font-size: 14pt; color: #886112; margin: 10px 0 5px 15px; line-height: 120%; }
+.historyBookInt { width: 683px; height: 507px; background-image: url(img/history-book.jpg); margin: 0 0 20px 1px; overflow: hidden; }
+.historyBookPage1 { float: left; width: 342px; height: 507px; overflow: hidden; }
+.historyBookPage1Int { width: 260px; height: 420px; overflow: hidden; margin: 40px 0 0 60px; font-family: Tahoma; font-size: 10pt; line-height: 120%; text-align: justify; }
+.historyBookPage2 { float: left; width: 341px; height: 507px; overflow: hidden; }
+.historyBookPage2Int { width: 260px; height: 420px; overflow: hidden; margin: 40px 0 0 27px; font-family: Tahoma; font-size: 10pt; line-height: 120%; text-align: justify; }
+
+/* block epigraph */
+.epigraphCont { width: 685px; min-height: 187px; background: url(img/bg-gradient-grey.jpg) left top no-repeat, url(img/bg-gradient-grey-footer.jpg) left bottom no-repeat; background-repeat: no-repeat; padding: 0 0 15px 0; overflow: hidden; }
+.epigraphTitleCont { width: 683px; background: url(img/bg-history-title.jpg) top left repeat-x; min-height: 40px; border: 1px solid #dedede; overflow: hidden; }
+.epigraphTitle { font-family: 'Marcellus'; font-size: 14pt; color: #886112; margin: 10px 0 5px 15px; line-height: 120%; }
+.epigraphInt { width: 683px; height: 507px; background-image: url(img/epigraph.jpg); margin: 0 0 0 1px; overflow: hidden; }
+.epigraphPage1 { float: left; width: 342px; height: 507px; overflow: hidden; }
+.epigraphPage1Int { width: 260px; height: 435px; overflow: hidden; margin: 40px 0 0 40px; font-family: Tahoma; font-size: 10pt; line-height: 120%; text-align: justify; }
+.epigraphPage2 { float: left; width: 341px; height: 507px; overflow: hidden; }
+.epigraphPage2Int { width: 260px; height: 435px; overflow: hidden;  margin: 40px 0 0 45px; font-family: Tahoma; font-size: 10pt; line-height: 120%; text-align: justify; }
+
+/* multi block: post it - paper - parchment */
+.multiBlockCont { width: 685px; min-height: 187px; background: url(img/bg-gradient-grey.jpg) left top no-repeat, url(img/bg-gradient-grey-footer.jpg) left bottom no-repeat; background-repeat: no-repeat; padding: 0 0 15px 0; margin: 0 0 10px 0; overflow: hidden; }
+.multiBlockInt { width: 655px; margin: 15px 15px 0 15px; overflow: hidden; }
+.multiBlockVideo { float: left; width: 402px; height: 299px; margin: 0 0 0 0; overflow: hidden; }
+.multiBlockVideo img { padding: 15px; margin-bottom: 10px; max-width: 405px; }
+.multiblockContent { float: left; width: 235px; height: 299px; margin: 0 15px 0 0; overflow: hidden; }
+.multiBlockRemember { font-size: 14pt; }
+.multiBlockSmall { font-size: 9pt; }
+/* post it */
+.postitBlockBg { background-image: url(img/postit.png); }
+.postitBlockPos { margin: 40px 15px 0 20px; font-family: Philosopher; font-size: 11pt; line-height: 120%; color: #333; -moz-transform: rotate(-2.5deg); -o-transform: rotate(-2.5deg); -webkit-transform: rotate(-2.5deg); }
+/* paper */
+.paperBlockBg { background-image: url(img/paper.png); }
+.paperBlockPos { margin: 30px 15px 0 25px; font-family: Philosopher; font-size: 11pt; line-height: 120%; color: #333; }
+/* parchment */
+.parchmentBlockBg { background-image: url(img/pergamino.png); }
+.parchmentBlockPos { margin: 30px 25px 0 30px; font-family: Philosopher; font-size: 11pt; line-height: 120%; color: #333; text-align: justify; }
+/* cuadernillo */
+.cuadernilloContenedor { float: left; width: 235px; box-shadow: 1px 0px 10px #cecece; background: url(img/cuadernilloBg.jpg); border-radius: 5px; overflow: hidden; margin: 0 15px 0 0; overflow: hidden; }
+.cuadernilloContenedorInt { width: 225px; margin: 5px auto; }
+.cuadernilloHeader { width: 225px; height: 12px; background: url(img/cuadernilloHeader.png); }
+.cuadernilloFooter { width: 225px; height: 12px; background: url(img/cuadernilloFooter.png); }
+.cuadernilloContenido { width: 225px; min-height: 265px; background: url(img/cuadernilloBgHoja.png); }
+.cuadernilloContenidoInt { margin: 0 20px 0 20px; font-family: Bree-Thin; font-size: 11pt; line-height: 150%; text-align: justify; }
+.cuadernilloContenidoInt p { margin: 0; }
+
+/* cork table */
+.corkTableCont { width: 685px; background: url(img/bg-gradient-grey.jpg) left top no-repeat, url(img/bg-gradient-grey-footer.jpg) left bottom no-repeat; background-repeat: no-repeat; padding: 0 0 15px 0; overflow: hidden; }
+.corkTableInt { width: 670px; height: 452px; background-image: url(img/cork-table.png);  margin: 15px 0 0 7px; overflow: hidden; }
+.corkTablePaper { float: left; width: 335px; height: 452px; overflow: hidden; }
+.corkTablePaperCont { width: 235px; height: 340px; margin: 65px 15px 0 50px; overflow: hidden; }
+.corkTablePaperInt { font-family: Tahoma; font-size: 10pt; line-height: 120%; }
+.corkTablePhotos { float: left; width: 335px; height: 452px; overflow: hidden; }
+.corkTablePhoto1 { width: 262px; height: 130px; margin: 52px 0 0 20px; background-color: #FFF; overflow: hidden; }
+.corkTablePhoto2 { width: 262px; height: 131px; margin: 67px 0 0 20px; background-color: #FFF; overflow: hidden; }
+
+/* blackboard */
+.blackboardCont { width: 685px; background: url(img/bg-gradient-grey.jpg) left top no-repeat, url(img/bg-gradient-grey-footer.jpg) left bottom no-repeat; background-repeat: no-repeat; padding: 0 0 15px 0; overflow: hidden; }
+.blackboardInt { width: 670px; height: 407px; background-image: url(img/blackboard.jpg);  margin: 15px 0 0 7px; overflow: hidden; }
+.blackboardContent { float: left; width: 335px; height: 407px;  margin: 30px 0 20px 40px; overflow: hidden; }
+.blackboardContentInt { width: 325px; height: 340px; overflow: hidden; }
+.blackboardContentText { font-family: Trebuchet MS; font-size: 10pt; color: #FFF; line-height: 130%; }
+.blackboardPhoto { float: left; width: 295px; height: 407px; overflow: hidden; }
+.blackboardPhotoInt { width: 168px; height: 171px; margin: 103px 0 0 55px; overflow: hidden; }
+
+/* simple block */
+.simpleBlockCont { width: 685px; min-height: 187px; background: url(img/bg-gradient-grey.jpg) left top no-repeat, url(img/bg-gradient-grey-footer.jpg) left bottom no-repeat; background-repeat: no-repeat; padding: 0 0 20px 0; overflow: hidden; }
+.simpleBlockTitleCont { font-family: Philosopher; width: 683px; background: #f8f8f8 url(img/bgCristalStrong.png) repeat-x top left; min-height: 40px; border: 1px solid #dedede; overflow: hidden; }
+.simpleBlockTitle { font-family: Philosopher; font-size: 14pt; color: #666666; margin: 10px 0 5px 15px; line-height: 120%; }
+.simpleBlockContent { width: 683px; background: url(img/bg-gradient-grey-int.png) left top repeat-x; margin: 0 0 0 1px; overflow: hidden; }
+.simpleBlockContentInt { width: 655px; min-height: 150px; margin: 15px 15px 0 15px; text-align: justify; overflow: hidden; }
+.simpleBlockContentText { font-family: Tahoma; font-size: 10pt; color: #666666; margin: 0; line-height: 140%; text-align: justify; }
+.simpleBlockWithoutTitle { margin-top: 1px; }
+.simpleBlockWithoutBgFooter { width: 685px; min-height: 187px; background: url(img/bg-gradient-grey.jpg) left top no-repeat; background-repeat: no-repeat; padding: 0 0 20px 0; overflow: hidden; }
+.simpleBlockContentInt img { padding: 10px; background: url(img/pixel-transparente.png); box-shadow:1px 1px 7px 3px #cecece inset; margin-bottom: 10px; max-width: 635px; }
+
+/* ul arrows and question */
+li.gradientGrey { background: url(img/bg-gradient-grey-list.jpg) bottom left repeat-x; font-size: 10pt; color: #666666; padding: 5px 10px 10px 10px; margin: 0 0 15px 0; overflow: hidden; }
+ul.arrowMaths { list-style-image: url(img/icon-maths-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+.arrowMaths ul li { list-style-image: url(img/icon-maths-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.arrowMaths img { padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important;  }
+ul.arrowHistory { list-style-image: url(img/icon-history-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+.arrowHistory ul li { list-style-image: url(img/icon-history-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.arrowLengua { list-style-image: url(img/icon-lengua-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+.arrowLengua ul li { list-style-image: url(img/icon-lengua-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.arrowCCNN { list-style-image: url(img/icon-ccnn-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+.arrowCCNN ul li { list-style-image: url(img/icon-ccnn-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.arrowCono { list-style-image: url(img/icon-cono-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+.arrowCono ul li { list-style-image: url(img/icon-cono-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.arrowCatalan { list-style-image: url(img/icon-catalan-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+.arrowCatalan ul li { list-style-image: url(img/icon-catalan-arrow.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconSearch { list-style-image: url(img/icon-search.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconDocument { list-style-image: url(img/icon-document.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconDocument img { padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important; }
+ul.iconLink { list-style-image: url(img/icon-link.png) !important; text-align: justify; overflow: hidden; list-style-position: inside; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconHGroup { list-style-image: url(img/icon-history-group.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconMGroup { list-style-image: url(img/icon-maths-group.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconLGroup { list-style-image: url(img/icon-lengua-group.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconCMGroup { list-style-image: url(img/icon-cono-group.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.iconNGroup { list-style-image: url(img/icon-ccnn-group.png) !important; text-align: justify; overflow: hidden; list-style-position: inside !important; margin: 0 0 10px 0px; padding: 0 !important; }
+ul.questions { text-align: justify; margin: 0; padding: 0; overflow: hidden; }
+.gradientGreyQuestion { background: url(img/bg-gradient-grey-list.jpg) bottom left repeat-x; padding: 10px; overflow: hidden; }
+ul.questionsInt { text-align: justify; margin: 0; padding: 0; overflow: hidden; }
+li.questions { list-style-type: none; font-weight: bold; font-size: 8pt; color: #666666; padding: 0 0 0 20px; margin: 0; overflow: hidden; }
+li.questionsIconMaths { background: url(img/icon-maths-question.png) left center no-repeat; line-height: 130%; overflow: hidden; }
+li.questionsIconHistory { background: url(img/icon-history-question.png) left center no-repeat; line-height: 130%; overflow: hidden; }
+li.questionsIconLengua { background: url(img/icon-lengua-question.png) left center no-repeat; line-height: 130%; overflow: hidden; }
+li.questionsIconCCNN { background: url(img/icon-ccnn-question.png) left center no-repeat; line-height: 130%; overflow: hidden; }
+li.questionsIconCono { background: url(img/icon-cono-question.png) left center no-repeat; line-height: 130%; overflow: hidden; }
+
+/* activity */
+.activityTitle { width: 683px; margin: 1px 1px 0 1px; overflow: hidden; }
+.activityTitleCont { width: 683px; min-height: 70px; background: url(img/bg-gradient-grey-question-title.jpg) left top repeat; overflow: hidden; }
+.activityTitleIcon { float: left; width: 65px; height: 70px; text-align: center; margin: 0 25px 0 0; overflow: hidden; }
+.activityTitleIcon img { width: 45px; height: 45px; margin-top: 13px; }
+p.activityTitleText { font-family: 'Ubuntu Condensed'; color: #666666; font-size: 13pt; margin: 17px 0 0 10px; }
+.activityTitleShadow { width: 685px; height: 3px; background: url(img/bg-gradient-grey-question-title-footer.jpg) left top no-repeat; margin: 0 0 15px 0; overflow: hidden; }
+.activityTitleContent { width: 653px; margin: 0 15px 0 15px; }
+.activityTitleContentPhoto { float: left; width: 300px; margin: 0; overflow: hidden; }
+div.activityTitleContentText { float: left; width: 340px; margin: 0 0 0 10px; overflow: hidden; }
+.activityContentTextMarginLeft { margin: 0 0 0 10px; }
+.activityContentTextMarginRight { margin: 0 10px 0 0; }
+.activityTitleContent img { padding: 10px; background: url(img/pixel-transparente.png); box-shadow:1px 1px 7px 3px #cecece inset; margin-bottom: 10px; max-width: 635px; }
+.activityTitleContentText { font-family: Tahoma; font-size: 10pt; color: #666666; margin: 0; line-height: 160%; text-align: justify; }
+.activityTitleContentText img { padding: 15px; background: url(img/pixel-transparente.png); box-shadow:1px 1px 7px 3px #cecece inset; margin-bottom: 10px; max-width: 625px; }
+.activityIconEstadistica { background: url(img/icon-estadistica.png) center center no-repeat; }
+.activityIconDados { background: url(img/icon-probabilidad.png) center center no-repeat; }
+/* matematicas */
+.activityIconMPlanos { background: url(img/icon-planos.png) center center no-repeat; }
+.activityIconMSN { background: url(img/icon-numerosromanos.png) center center no-repeat; }
+.activityIconMNE { background: url(img/icon-termometro.png) center center no-repeat; }
+/* historia */
+.activityIconHEA { background: url(img/icon-corona.png) center center no-repeat; }
+.activityIconHEM { background: url(img/icon-corona-rey.png) center center no-repeat; }
+.activityIconHPT { background: url(img/icon-globe.png) center center no-repeat; }
+/* lengua */
+.activityIconLC { background: url(img/icon-comunicacion.png) center center no-repeat; }
+/* iconos actividades */
+.activityCalc { background: url(img/icons/activity/calculada.png) no-repeat center center; }
+.activityCloze { background: url(img/icons/activity/cloze.png) no-repeat center center; }
+.activityDragDrop { background: url(img/icons/activity/drag_and_drop.png) no-repeat center center; }
+.activityPair { background: url(img/icons/activity/emparejamiento.png) no-repeat center center; }
+.activityEssay { background: url(img/icons/activity/ensayo_descripcion.png) no-repeat center center; }
+.activitySpace { background: url(img/icons/activity/espacio_para_completar.png) no-repeat center center; }
+.activityNumeric { background: url(img/icons/activity/numerica.png) no-repeat center center; }
+.activityTrueFalse { background: url(img/icons/activity/verdadero_falso.png) no-repeat center center; }
+.activityPoodll { background: url(img/icons/activity/poodll_recording.png) no-repeat center center; }
+.activityShortResponse { background: url(img/icons/activity/respuesta_corta.png) no-repeat center center; }
+.activityMultipleResponse { background: url(img/icons/activity/respuesta_multiple.png) no-repeat center center; }
+.activityMissingWords { background: url(img/icons/activity/select_missing_words.png) no-repeat center center; }
+
+/* tooltip */
+a.tinytooltip, a.tinytooltip img {outline:none; text-decoration: none; cursor: help; }
+a.tinytooltip strong {line-height:30px; font-family: 'Philosopher'; font-weight: normal; font-size: 13pt; }
+a.tinytooltip img {}
+a.tinytooltip:hover, a.tinytooltip img:hover {text-decoration:none;}
+a.tinytooltip span { z-index:10; font-family: Calibri; display:none; padding:15px; margin-top:-30px; margin-left:5px; min-width: 350px; max-width:500px; line-height:16px; font-size: 11pt; color: #666666; line-height: 150%; }
+a.tinytooltip:hover span { display:inline; position:absolute; color:#111; border:1px solid #dedede; background:#fcfcfc;}
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+
+a.tinytooltipout, a.tinytooltipout img {outline:none; text-decoration: none; cursor: help; }
+a.tinytooltipout strong {line-height:30px; font-family: 'Philosopher'; font-weight: normal; font-size: 13pt; }
+a.tinytooltipout img {}
+a.tinytooltipout:hover, a.tinytooltipout img:hover {text-decoration:none;}
+a.tinytooltipout span { z-index:10; font-family: Calibri; display:none; padding:15px; margin-top:-30px; margin-left:5px; max-width:350px; line-height:16px; font-size: 11pt; color: #666666; line-height: 150%; }
+a.tinytooltipout:hover span { display:inline; position:absolute; color:#111; border:1px solid #dedede; background:#fcfcfc;}
+
+a.tinytooltip span { border-radius:4px; -moz-border-radius: 4px; }
+
+/* tables */
+/* maths */
+tr.tableMaths { font-size: 11pt; height: 53px; color:  #FFF; background-image: url(img/tableBgTitle.jpg); background-size:100% 100%; }
+td.tableMathsContent img { padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important; }
+tr.tableMathsPar { font-size: 13pt; height: 53px; color: #fff; background-color: #ec634f; }
+tr.tableMathsPar td hr, .tableMathsImpar td hr { display: block; height: 1px; border: 0; border-top: 1px solid #000; margin: 1em 0; padding: 0; }
+tr.tableMathsImpar { font-size: 13pt; height: 53px; color: #fff; background-color: #f29284; }
+td.tableMathsTitle { font-size: 14pt; padding: 10px; border-right: 1px solid #f7f7f7; font-family: Philosopher; }
+td.tableMathsContent { padding: 10px; border-right: 1px solid #f7f7f7; font-family: Ubuntu Condensed; }
+td.tableMathsContent select { max-width: 100px; }
+/* maths divisiones y multiplicaciones */
+tr.tableBlank { font-size: 11pt; height: 53px; color:  #FFF; background-image: url(img/tableBgTitle.jpg); background-size:100% 100%; }
+td.tableBlankContent img { padding: 0 !important; background: transparent !important; box-shadow: none !important; margin-bottom: 0 !important; }
+tr.tableBlankCelda { font-size: 13pt; height: 53px; }
+td.tableBlankTitle { font-size: 14pt; padding: 10px; font-family: Philosopher; }
+td.tableBlankContent { padding: 10px; border-right: 1px solid #f7f7f7; font-family: Ubuntu Condensed; }
+td.tableBlankContent select { max-width: 100px; }
+/* history */
+tr.tableHistory { font-size: 11pt; height: 53px; color:  #FFF; background-image: url(img/tableBgTitle.jpg); background-size:100% 100%; }
+tr.tableHistoryPar { font-size: 13pt; height: 53px; color: #333; background-color: #f5e6c1; }
+tr.tableHistoryImpar { font-size: 13pt; height: 53px; color: #333; background-color: #f4d076; }
+td.tableHistoryTitle { font-size: 14pt; padding: 10px; border-right: 1px solid #f7f7f7; font-family: Philosopher; }
+td.tableHistoryContent { padding: 10px; border-right: 1px solid #f7f7f7; font-family: Ubuntu Condensed; }
+td.tableHistoryContent select { max-width: 100px; }
+/* lengua */
+tr.tableLengua { font-size: 11pt; height: 53px; color:  #FFF; background-image: url(img/tableBgTitle.jpg); background-size:100% 100%; }
+tr.tableLenguaPar { font-size: 13pt; height: 53px; color: #FFF; background-color: #7778bb; }
+tr.tableLenguaImpar { font-size: 13pt; height: 53px; color: #333; background-color: #c1c1e8; }
+td.tableLenguaTitle { font-size: 14pt; padding: 10px; border-right: 1px solid #f7f7f7; font-family: Philosopher; }
+td.tableLenguaContent { padding: 10px; border-right: 1px solid #f7f7f7; font-family: Ubuntu Condensed; }
+td.tableLenguaContent select { max-width: 100px; }
+/* ciencias naturales */
+tr.tableCCNN { font-size: 11pt; height: 53px; color:  #FFF; background-image: url(img/tableBgTitle.jpg); background-size:100% 100%; }
+tr.tableCCNNPar { font-size: 13pt; height: 53px; color: #FFF; background-color: #65bd24; }
+tr.tableCCNNImpar { font-size: 13pt; height: 53px; color: #333; background-color: #93d166; }
+td.tableCCNNTitle { font-size: 14pt; padding: 10px; border-right: 1px solid #f7f7f7; font-family: Philosopher; }
+td.tableCCNNContent { padding: 10px; border-right: 1px solid #f7f7f7; font-family: Ubuntu Condensed; }
+td.tableCCNNContent select { max-width: 100px; }
+/* conocimiento del medio */
+tr.tableCono { font-size: 11pt; height: 53px; color:  #FFF; background-image: url(img/tableBgTitle.jpg); background-size:100% 100%; }
+tr.tableConoPar { font-size: 13pt; height: 53px; color: #6d6d6d; background-color: #CCCF4D; }
+tr.tableConoImpar { font-size: 13pt; height: 53px; color: #333; background-color: #BEC14F; }
+td.tableConoTitle { font-size: 14pt; padding: 10px; border-right: 1px solid #f7f7f7; font-family: Philosopher; }
+td.tableConoContent { padding: 10px; border-right: 1px solid #f7f7f7; font-family: Ubuntu Condensed; }
+td.tableConoContent select { max-width: 100px; }
+/* catalan */
+tr.tableLlcat { font-size: 11pt; height: 53px; color:  #FFF; background-image: url(img/tableBgTitle.jpg); background-size:100% 100%; }
+tr.tableLlcatPar { font-size: 13pt; height: 53px; color: #ececed; background-color: #6076c8; }
+tr.tableLlcatImpar { font-size: 13pt; height: 53px; color: #ececed; background-color: #3855c0; }
+td.tableLlcatTitle { font-size: 14pt; padding: 10px; border-right: 1px solid #f7f7f7; font-family: Philosopher; }
+td.tableLlcatContent { padding: 10px; border-right: 1px solid #f7f7f7; font-family: Ubuntu Condensed; }
+td.tableLlcatContent select { max-width: 100px; }
+
+/* feedback */
+.feedbackCorrecto { width: 250px; height: 150px; background: url(img/feedback_correcto.gif) no-repeat top left; overflow: hidden; }
+.feedbackIncorrecto { width: 250px; height: 150px; background: url(img/feedback_incorrecto.gif) no-repeat top left; overflow: hidden; }
+.feedbackRegular { width: 250px; height: 150px; background: url(img/feedback_regular.gif) no-repeat top left; overflow: hidden; }
+.feedbackPista1 { width: 250px; height: 150px; background: url(img/feedback_pista_1.gif) no-repeat top left; overflow: hidden; }
+
+/* blockquote */
+blockquote { font-family: Georgia, serif; font-size: 12pt !important; font-style: italic;margin: 0;padding: 0.25em 45px;line-height: 1.45;position: relative;color: #383838;border: 0;overflow: hidden; text-align: center;}
+blockquote:before {display: block;content: "\201C";font-size: 80px;position: absolute;left: 0;top: -20px;color: #7a7a7a;}
+blockquote:after {display: block;content: "\201D";font-size: 80px;position: absolute;right: 15px; bottom: -20px;color: #7a7a7a;}
+blockquote cite {color: #999999;font-size: 14px;display: block;margin-top: 5px;text-align: right;} 
+blockquote cite:before {content: "\2014 \2009";}
+
+/* custom */
+.textoDestacadoLengua { background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5); box-shadow: 0 -6px 0 rgba(235, 150, 108, 0.2); color: rgba(235, 150, 108, 0.8); display: inline; font-family: Baskerville,Georgia,serif;font-size: 28px;font-style: italic;line-height: 46px;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); }
+
+/* popup */
+.modalDialog { position: fixed; text-align: justify; font-family: Calibri; font-size: 12pt;	top: 0;	right: 0;	bottom: 0;	left: 0;	background: rgba(0,0,0,0.8);	z-index: 99999;	opacity:0;	-webkit-transition: opacity 400ms ease-in;	-moz-transition: opacity 400ms ease-in;	transition: opacity 400ms ease-in;	pointer-events: none;}
+.modalDialog:target {opacity:1;	pointer-events: auto;}
+.modalDialog > div { width: 655px; max-height: 600px; overflow-y: auto; overflow-x: hidden;	position: relative;	margin: 5% auto;	padding: 5px 20px 13px 20px;	border-radius: 5px;	background: #fff;	background: -moz-linear-gradient(#fff, #f3f3f3); background: -webkit-linear-gradient(#fff, #f3f3f3);	background: -o-linear-gradient(#fff, #f3f3f3);}
+.modalDialog div img { max-width: 655px; max-height: 500px; }
+.modalDialog div h2 { font-family: Ubuntu Condensed; }
+.modalDialog .close { margin: 5px -10px 0 0; font-family: Philosopher; background: #f04141;color: #FFFFFF; font-size: 12pt;	right: -12px;	text-align: center;	top: -10px;	width: 24px;	padding: 2px;	text-decoration: none;	-webkit-border-radius: 5px;	-moz-border-radius: 5px;	border-radius: 5px;	-moz-box-shadow: 1px 1px 2px #636363;	-webkit-box-shadow: 1px 1px 2px #636363;	box-shadow: 1px 1px 2px #636363;	opacity: 90;}
+.modalDialog .close:hover { background: #d50000; opacity: 90; }
+
+/* acordeon */
+#accordionXtend { border-top: 1px solid #dedede; border-right: 1px solid #dedede; border-left: 1px solid #dedede; }
+#accordionXtend h3 { height: 45px; font-weight: normal; font-family: Bree-Thin; font-size: 14pt; margin: 0; padding: 5px 15px 0 15px; background: #e8e8e8; background: url(img/open.png) no-repeat top right, -moz-linear-gradient(top, #e8e8e8 0%, #fafafa 100%);background: url(img/open.png) no-repeat top right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(100%,#fafafa)); background: url(img/open.png) no-repeat top right, -webkit-linear-gradient(top, #e8e8e8 0%,#fafafa 100%); background: url(img/open.png) no-repeat top right, -o-linear-gradient(top, #e8e8e8 0%,#fafafa 100%); border-bottom: 1px solid #dedede; }
+#accordionXtend h3[aria-selected="true"] { height: 45px; font-weight: normal; font-family: Bree-Thin; font-size: 14pt; margin: 0; padding: 5px 15px 0 15px; background: #e8e8e8; background: url(img/close.png) no-repeat top right, -moz-linear-gradient(top, #e8e8e8 0%, #fafafa 100%);background: url(img/close.png) no-repeat top right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(100%,#fafafa)); background: url(img/close.png) no-repeat top right, -webkit-linear-gradient(top, #e8e8e8 0%,#fafafa 100%); background: url(img/close.png) no-repeat top right, -o-linear-gradient(top, #e8e8e8 0%,#fafafa 100%); border-bottom: 1px solid #dedede; }
+#accordionXtend div.accordionXtendInt { background: #f9f9f9; background: -moz-linear-gradient(top, #f9f9f9 0%, #fefefe 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#fefefe));background: -webkit-linear-gradient(top, #f9f9f9 0%,#fefefe 100%);background: -o-linear-gradient(top, #f9f9f9 0%,#fefefe 100%); border-bottom: 1px solid #dedede; padding: 15px 15px 30px 15px; font-family: Tahoma; font-size: 10pt; color: #666666; margin: 0; line-height: 140%; text-align: justify; }
+
+/* all */
+*[data-template-bg="default"] {
+    background-color: #f5f5f5;
+    color: #42a8c7;
+}
+
+/* title header */
+.xts-title-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-radius: 5px;
+    position: relative;
+    background: #42a8c7;
+    border-top: 1px solid #D7D8DB;
+    border-right: 1px solid #D7D8DB;
+}
+
+.xts-title-header-simple {
+    border: none;
+}
+
+.xts-title-header .xts-title-custombox {
+    width: 55px;
+    height: 100%;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.xts-title-header .xts-title-text {
+    width: 100%;
+    height: 40px;
+    color: #42a8c7;
+    font-size: 17px;
+    background: #f5f5f5;
+    padding: 7px;
+}
+
+.xts-title-header-simple .xts-title-text {
+    background: #FFF;
+    color: #42a8c7;
+}
+
+/* separator */
+.xts-separator-box {
+    width: 100%;
+    /*margin-bottom: -25px; quitado en esta version*/
+	padding-top: 10px;/*añadido en esta version*/
+	
+}
+
+.xts-separator-box .xts-separator {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    /*background-image: url(img/bg-stripes.png);*/
+    border-radius: 10px 10px 0 0;
+    color: #42a8c7;
+    font-size: 15px;
+    padding: 9px 10px;
+    border-top: 1px solid #D7D8DB;
+    border-right: 1px solid #D7D8DB;
+    border-left: 1px solid #D7D8DB;
+}
+
+.xts-separator-box .xts-separator > i {
+    margin-left: auto;
+    font-size: 30px;
+    padding: 0;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.xts-separator-box .xts-separator-false-content {
+    width: 100%;
+    min-height: 10px; /*reducido en esta version*/
+    border-top: 1px solid #D7D8DB;
+    border-right: 1px solid #D7D8DB;
+    border-left: 1px solid #D7D8DB;
+    background: linear-gradient(#f5f5f5, #FFF);
+}
+
+/* separator sub */
+.xts-separator-box-sub {
+    width: 50%;
+    /*margin-bottom: -40px;*/
+}
+
+.xts-separator-box-sub .xts-separator-sub {
+    width: 100%;
+    min-height: 35px;
+    display: flex;
+    /*background-image: url(img/bg-stripes.png);*/
+    border-radius: 10px 10px 0 0;
+    color: #42a8c7;
+    font-size: 15px;
+    padding: 7px 10px;
+    border: 1px solid #D7D8DB;
+}
+
+.xts-separator-box-sub .xts-separator-false-content {
+    width: 100%;
+    min-height: 12px;
+    border-right: 1px solid #D7D8DB;
+    border-left: 1px solid #D7D8DB;
+    background: linear-gradient(#f5f5f5, #FFF);
+}
+
+/* separator footer */
+.xts-separator-box-footer {
+    width: 100%;
+}
+
+.xts-separator-box-footer .xts-separator-footer {
+    width: 100%;
+    height: 5px;
+    display: flex;
+    /*background-image: url(img/bg-stripes.png);*/
+    border-right: 1px solid #D7D8DB;
+    border-bottom: 1px solid #D7D8DB;
+    border-left: 1px solid #D7D8DB;
+}
+
+.xts-separator-box-footer .xts-separator-false-content {
+    width: 100%;
+    height: 30px;
+    border-right: 1px solid #D7D8DB;
+    border-left: 1px solid #D7D8DB;
+    background: linear-gradient(#FFF, #f5f5f5);
+}
+
+/* separator subsection */
+.xts-separator-box-subsection-centered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.xts-separator-box-subsection {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; 
+    /*margin-bottom: -10px; quitado en esta version*/
+    /*padding: 10px;*/
+}
+
+.section .label .contentwithoutlink,
+.section .label .activityinstance {
+    padding: 0;
+}
+
+.xts-separator-box-subsection .xts-separator-box-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.xts-separator-box-subsection .xts-separator-box-img .xts-separator-box-img-bg {
+    width: 210px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.xts-separator-box-subsection .xts-separator-box-img-bg.conecta {
+    background-image: url('img/xts_responsive_conectaconelmundo.png');
+}
+
+.xts-separator-box-subsection .xts-separator-box-img-bg.profundiza {
+    background-image: url('img/xts_responsive_profundiza.png');
+}
+
+.xts-separator-box-subsection .xts-separator-box-img-bg.amplia {
+    background-image: url('img/xts_responsive_amplia.png');
+}
+
+.xts-separator-box-subsection .xts-separator-subsection-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+}
+
+.xts-separator-box-subsection .xts-separator-subsection-box .xts-separator-sub {
+    min-width: 210px;
+    height: 35px;
+    display: flex;
+    /*background-image: url(img/bg-stripes.png);*/
+    border-radius: 5px;
+    color: #42a8c7;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 1px solid #D7D8DB;
+}
+
+.xts-separator-box-subsection .xts-separator-false-content {
+    width: 100%;
+    min-height: 30px;
+    border-top: 1px solid #D7D8DB;
+    border-right: 1px solid #D7D8DB;
+    border-left: 1px solid #D7D8DB;
+    background: linear-gradient(#f5f5f5, #FFF);
+    margin-top: -15px;
+}
+
+/* lists */
+ul.xts_responsive-list {
+    width: 100%;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ul.xts_responsive-list li {
+    position: relative;
+    display: flex;
+    width: 98%;
+    min-height: 40px;
+    margin: 0 1% 5px 1%;
+    border-radius: 7px;
+    border: 1px solid #D7D8DB;
+    background: #f5f5f5 !important;
+}
+
+ul.xts_responsive-list li > .type {
+    width: 40px;
+    font-family: fontawesome;
+    color: #FFF;
+    font-size: 19pt;
+    text-align: center;
+    color: #42a8c7;
+}
+
+ul.xts_responsive-list li i {
+    width: 40px;
+    position: relative;
+    color: #FFF;
+    font-size: 19pt;
+    text-align: center;
+    padding: 9px 0 0 2px;
+    border-radius: 5px 0 0 5px;
+}
+
+ul.xts_responsive-list li span {
+    display: block;
+    width: 100%;
+    /*height: 100%;*//*xtend-106 en firefox esto se ve muy alto*/
+    background-color: #fafafa;
+    color: #777;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border-left: 1px solid #D7D8DB;
+}
+
+/* alert */
+.xts_responsive-alert {
+    width: 100%;
+}
+
+.xts_responsive-alert .xts-line {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #42a8c7;
+    /*background-image: url(img/bg-stripes.png);*/
+}
+
+.xts_responsive-alert .xts_responsive-alert-text {
+    width: 100%;
+    color: #777;
+    padding: 15px 15px 20px 15px;
+    font-size: 14px;
+    background: linear-gradient(#F1EFEF, #FFF);
+}
+
+
+.tabCollapseResponsive{
+	margin-top:0px;
+}}
+
+/* rework atto */
+#subjectPrincipal { width: 685px; height: 50px; margin: 0 0 10px 0; overflow: hidden; background: #2d449c; border-radius: 5px; box-shadow: 5px -7px 10px 0px #4c4c4c inset; }
+.subjectBgLetter { background-color: #213a98; background-image: url(img/bg-crystal.png); background-position:  top left; background-repeat: repeat-x;  }
+.subjectTituloPrincipal { color: #fff; }
+.subjectBg { background-color: #213a98;  }
