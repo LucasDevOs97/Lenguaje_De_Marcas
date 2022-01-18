@@ -1,24 +1,31 @@
 #principal {
-    text-align: center;
     background-color: #58D3F7;
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
     border: 1px;
-    border-color: darkblue;
 }
 
-#reglas {
-    text-align: center;
+h1 + h2 {
     background-color: #58ACFA;
     font-size: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
     border: 1px;
-    border-color: darkblue;
     padding: 3px;
 }
 
-.resaltado {
+/*#reglas {
+    background-color: #58ACFA;
+    font-size: 20px;
+    border: 1px;
+    padding: 3px;
+}*/
+
+#principal, #reglas {
+    text-align: center;
+    border-color: darkblue;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+li > .resaltado {
     background-color: yellow;
     font-weight: bold;
 }
@@ -28,7 +35,23 @@
     background-color: #58ACFA;
 }
 
-.section2 b ins {
+.section2 ins {
     background-color: #58D3F7;
     color: blue;
+}
+
+ins {
+    font-weight: bold;
+}
+
+#consejos {
+    font-style: italic;
+}
+
+a[href*="alexia"]{
+    color: yellowgreen;
+}
+
+a[href="https://www.google.es/"]{
+    color: red;
 }

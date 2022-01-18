@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <style>
+
+            div > span {
+                background-color: violet;
+            }
+
+            /*
+            El selector mayor que es para seleccionar al hijo directo, cuando dejamos el espacio en blanco es para todo elemento 
+            seleccionado que esté dentro del otro, ya sea hijo o no.
+            */
+
+            span {
+                background-color: green;
+            }
+
+            /*
+            
+            El selector + es para seleccionar elementos adyacentes
+            
+            */
+
+            /*
+            
+            Selector de atributos:
+            elementos <a> con un atributo title:
+
+                a[title] {
+                    color: red;
+                }
+            
+                podemos hacer selecciones teniendo en cuanto un atributo comúnn que tenga esa etiqueta
+
+            elementos <a> con un href que contenga "example"*
+
+                a[href*="example"] {
+                    color: green;
+                }
+
+                Solo coloreará aquellos que en el enlace contengan la palabra example.
+
+                Para que sean los que comiencen por algo en específico:
+
+                a[href^="#"]
+
+                modificará a los que empiecen por #
+
+                $ es para seleccionar el fin del enlace
+
+
+
+            */
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <span>
+
+                Span 1
+
+                <span>
+
+                    Span 2
+
+                </span>
+
+            </span>
+
+        </div>
+
+
+    </body>
+    
+</html>
