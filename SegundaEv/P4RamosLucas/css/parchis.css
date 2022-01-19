@@ -33,6 +33,7 @@ li > .resaltado {
 #capturas {
     font-style: italic;
     background-color: #58ACFA;
+    font-weight: bold;
 }
 
 .section2 ins {
@@ -54,4 +55,47 @@ a[href*="alexia"]{
 
 a[href="https://www.google.es/"]{
     color: red;
+}
+
+a[title] {
+    color: violet;
+}
+
+a[href^="?"]{
+    color: pink;
+}
+
+a[href$=".com"]{
+    background-color: blue;
+}
+
+a[class~="twitch"]{
+    background-color: red;
+}
+
+a:hover {
+    font-size: 200%;
+    color: orange;
+}
+
+a:visited {
+    color: green;
+}
+
+a:link {
+    color: aqua;
+}
+
+a:active {
+    color: orangered;
+}
+
+h2::first-letter {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+}
+
+::marker {
+    color: violet;
+    font-size: 150%;
 }
