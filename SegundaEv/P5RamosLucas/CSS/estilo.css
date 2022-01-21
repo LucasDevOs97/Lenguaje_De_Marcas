@@ -1,0 +1,61 @@
+/*
+
+    Centramos el texto del título, ponemos el fondo fris, un borde negro, con la posición sticky siempre aparecerá el título de 
+    la página cuando se hace scroll, asignamos al texto el color blanco, le ponemos un sombreado negro y añadimos una altura de 
+    40 píxeles para que el sombreado quede dentro del borde.
+
+*/
+
+h1 {
+    text-align: center;
+    background-color: gray;
+    border: 1px dotted black;
+    position: sticky;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    height: 40px;
+}
+
+h2 {
+    border: 1px solid black;
+    width: 10%;
+    text-align: center;
+}
+
+#uno {
+    float: left;
+    background-color: lightcyan;
+}
+
+#dos {
+    background-color: lightskyblue;
+}
+
+#tres {
+    float: right;
+    background-color: lightcyan;
+}
+
+#uno, #dos, #tres {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cuatro {
+    margin-top: 7%;
+}
+
+#cuatro p {
+    width: 45%;
+    text-align: justify;
+}
+
+::marker {
+    color: royalblue;
+}
+
+a[href^="ref"] :visited{
+    text-shadow: black 0.1em 0.1em 0.2em;
+}

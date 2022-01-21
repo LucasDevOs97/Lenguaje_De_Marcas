@@ -1,0 +1,30 @@
+#principal {
+    margin-top: 5px, 0px, 5px, 0px;
+    background-color: aqua;
+    border: 2px dotted black;
+    padding: 9px, 6px;
+}
+
+#principal  div {
+    margin: 10px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    padding: 12px, 8px, 12px, 8px;
+}
+
+div {
+    height: 30%;
+    width: 45%;
+    border-style: dotted;
+}
+
+div h1 {
+    position: static;
+    border: 2px solid black;
+}
+
+div h2 {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+}
