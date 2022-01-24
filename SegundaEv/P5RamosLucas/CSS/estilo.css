@@ -59,3 +59,18 @@ h2 {
 a[href^="ref"] :visited{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
+
+.sublista {
+    background-color: aqua;
+    color: violet;
+}
+
+p::first-letter {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+table  {
+    border: 1px solid black;
+}
+
