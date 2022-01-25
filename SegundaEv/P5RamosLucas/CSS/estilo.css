@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     border: 1px solid black;
-    width: 10%;
+    width: fit-content;
     text-align: center;
 }
 
@@ -42,6 +42,12 @@ h2 {
     text-align: center;
     font-weight: bold;
 }
+
+/*
+
+Cambiar los divs con float por una lista con el atributo display:inline
+
+*/
 
 #cuatro {
     margin-top: 7%;
@@ -70,7 +76,16 @@ p::first-letter {
     font-size: 30px;
 }
 
-table  {
+table, td  {
     border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    border: 2px solid red;
+}
+
+tr {
+    text-align: center;
 }
 

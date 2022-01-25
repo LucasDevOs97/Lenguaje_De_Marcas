@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <title>Formulario</title>
+        <link rel="stylesheet" href="../css/form.css">
+
+    </head>
+
+    <body>
+
+        <div>
+
+            <form action="principal.html" method="post">
+
+                <fieldset>
+
+                    <label for="nom">Nombre</label>
+                    <br>
+                    <input id="nom" type="text" maxlength="16">
+
+                    <br>
+
+                    <label for="fecCom">Fecha del comentario:</label>
+                    <br>
+                    <input id="fecCom" name="fec" type="date">
+
+                    <br>
+
+                    <label for="age">Edad:</label>
+                    <br>
+                    <input id="age" name="age" type="number">
+
+                    <br>
+
+                    <label for="genero">Género:</label>
+                    <br>
+                    <select>
+
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>No binario</option>
+                        <option>Sin especificar</option>
+
+                    </select>
+
+                    <br>
+
+
+                    <input type="checkbox" id="politica" name="politica" value="true" checked>
+                    <label for="politica">Acepto la política de privacidad.</label>
+                    <br>
+                    <input type="checkbox" id="sub" name="sub" value="true" checked>
+                    <label for="sub">Deseo suscribirme para recibir más noticias</label>
+
+                    <br>
+
+                    <label for="opinion">Opinión:</label>
+                    <br>
+                    <textarea id="opinion"></textarea>
+
+                    <br><br>
+
+                    <input id="btnSave" type="submit" value="Subir opinión">
+
+                </fieldset>
+
+            </form>
+
+            <a href="#indice">Volver al índice</a> 
+
+        </div>
+
+    </body>
+
+</html>
