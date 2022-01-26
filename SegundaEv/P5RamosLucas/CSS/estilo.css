@@ -6,9 +6,14 @@
 
 */
 
+/*body {
+    background-image: url(../images/castle.jpg) ;
+    background-repeat: no-repeat;
+}*/
+
 h1 {
     text-align: center;
-    background-color: gray;
+    background-color: lightskyblue;
     border: 1px dotted black;
     position: sticky;
     color: white; 
@@ -81,7 +86,7 @@ table, td  {
     border-collapse: collapse;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) td{
     border: 2px solid red;
 }
 
@@ -89,3 +94,171 @@ tr {
     text-align: center;
 }
 
+a:hover {
+    font-size: 150%;
+}
+
+td:hover {
+    background-color: gray;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+.bg-5{
+
+   background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%);
+
+ }
+
+ 
+
+.sombra_animada {
+
+  color: #ffffff;
+
+  font: normal 80px Varela Round, sans-serif;
+
+  height: 80px;
+
+  left: 0;
+
+  letter-spacing: 5px;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  width: 100%;
+
+  animation: move linear 2000ms infinite;
+
+  z-index: 2
+
+}
+
+/*Animación para rotar las sombras*/
+
+@keyframes move {
+
+  0% {
+
+    text-shadow:
+
+      4px -4px 0 #A7AED3,
+
+      3px -3px 0 #A7AED3,
+
+      2px -2px 0 #A7AED3,
+
+      1px -1px 0 #A7AED3,
+
+      -4px 4px 0 #5B61A1,
+
+      -3px 3px 0 #5B61A1,
+
+      -2px 2px 0 #5B61A1,
+
+      -1px 1px 0 #5B61A1
+
+    ;
+
+  }
+
+  25% {
+
+    text-shadow:
+
+      -4px -4px 0 #6f7272,
+
+      -3px -3px 0 #6f7272,
+
+      -2px -2px 0 #6f7272,
+
+      -1px -1px 0 #6f7272,
+
+      4px 4px 0 #A7AED3,
+
+      3px 3px 0 #A7AED3,
+
+      2px 2px 0 #A7AED3,
+
+      1px 1px 0 #A7AED3
+
+    ;
+
+  }
+
+  50% {
+
+    text-shadow:
+
+      -4px 4px 0 #A7AED3,
+
+      -3px 3px 0 #A7AED3,
+
+      -2px 2px 0 #A7AED3,
+
+      -1px 1px 0 #A7AED3,
+
+      4px -4px 0 #6f7272,
+
+      3px -3px 0 #6f7272,
+
+      2px -2px 0 #6f7272,
+
+      1px -1px 0 #6f7272
+
+    ;
+
+  }
+
+  75% {
+
+    text-shadow:
+
+      4px 4px 0 #6f7272,
+
+      3px 3px 0 #6f7272,
+
+      2px 2px 0 #6f7272,
+
+      1px 1px 0 #6f7272,
+
+      -4px -4px 0 #A7AED3,
+
+      -3px -3px 0 #A7AED3,
+
+      -2px -2px 0 #A7AED3,
+
+      -1px -1px 0 #A7AED3
+
+    ;
+
+  }
+
+  100% {
+
+    text-shadow:
+
+      4px -4px 0 #A7AED3,
+
+      3px -3px 0 #A7AED3,
+
+      2px -2px 0 #A7AED3,
+
+      1px -1px 0 #A7AED3,
+
+      -4px 4px 0 #6f7272,
+
+      -3px 3px 0 #6f7272,
+
+      -2px 2px 0 #6f7272,
+
+      -1px 1px 0 #6f7272
+
+    ;
+
+  }
+
+}
