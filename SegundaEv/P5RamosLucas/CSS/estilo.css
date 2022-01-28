@@ -29,7 +29,6 @@ h2 {
 
 #uno {
     float: left;
-    background-color: lightcyan;
 }
 
 #dos {
@@ -38,7 +37,10 @@ h2 {
 
 #tres {
     float: right;
-    background-color: lightcyan;
+}
+
+#uno, #tres {
+  background-color: lightcyan;
 }
 
 #uno, #dos, #tres {
@@ -87,7 +89,7 @@ table, td  {
 }
 
 tr:nth-child(even) td{
-    border: 2px solid red;
+    border: 2px solid lightskyblue;
 }
 
 tr {
@@ -99,11 +101,14 @@ a:hover {
 }
 
 td:hover {
-    background-color: gray;
+    background-color: lightcyan;
     font-weight: bold;
     font-size: 120%;
 }
 
+nav ul {
+  list-style: none;
+}
 
 .bg-5{
 
@@ -262,3 +267,4 @@ td:hover {
   }
 
 }
+
