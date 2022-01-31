@@ -11,9 +11,13 @@
     background-repeat: no-repeat;
 }*/
 
+body {
+  background-color: rgb(211, 121, 121);
+}
+
 h1 {
     text-align: center;
-    background-color: lightskyblue;
+    background-color: rgb(242, 250, 135);
     border: 1px dotted black;
     position: sticky;
     color: white; 
@@ -110,13 +114,31 @@ nav ul {
   list-style: none;
 }
 
+#introPagina {
+  margin-bottom: 50px;
+}
+
+#imgLogo {
+  border-radius: 9px;
+  float: right;
+}
+
+footer {
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 25px;
+  height: 60px;
+}
+
+/*footer > a {
+
+}*/
+
 .bg-5{
 
    background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%);
 
  }
-
- 
 
 .sombra_animada {
 
