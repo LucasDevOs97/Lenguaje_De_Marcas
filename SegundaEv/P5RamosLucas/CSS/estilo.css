@@ -6,18 +6,13 @@
 
 */
 
-/*body {
-    background-image: url(../images/castle.jpg) ;
-    background-repeat: no-repeat;
-}*/
-
 body {
-  background-color: rgb(211, 121, 121);
+  background-color: rgb(219, 136, 136);
 }
 
 h1 {
     text-align: center;
-    background-color: rgb(242, 250, 135);
+    background-color: lightskyblue;
     border: 1px dotted black;
     position: sticky;
     color: white; 
@@ -54,12 +49,6 @@ h2 {
     font-weight: bold;
 }
 
-/*
-
-Cambiar los divs con float por una lista con el atributo display:inline
-
-*/
-
 #cuatro {
     margin-top: 7%;
 }
@@ -78,8 +67,7 @@ a[href^="ref"] :visited{
 }
 
 .sublista {
-    background-color: aqua;
-    color: violet;
+    background-color: lightcyan;
 }
 
 p::first-letter {
@@ -116,11 +104,13 @@ nav ul {
 
 #introPagina {
   margin-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 #imgLogo {
   border-radius: 9px;
-  float: right;
+  float: left;
+  margin-right: 15px;
 }
 
 footer {

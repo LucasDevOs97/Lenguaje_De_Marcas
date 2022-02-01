@@ -2,6 +2,19 @@ body {
     background-color: lightskyblue;
 }
 
+.btnImg {
+    background-image: url(../images/flecha.png);
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 55px;
+}
+
+#txtAfter {
+    color: white;
+    text-shadow: 0.2em 0.2em gray;
+    font-size: x-large;
+}
+
 input:focus, textarea:focus, select:focus {
     background-color: plum;
     border: 3px solid black;
