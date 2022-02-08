@@ -1,18 +1,25 @@
 /*
 
-    Centramos el texto del título, ponemos el fondo fris, un borde negro, con la posición sticky siempre aparecerá el título de 
-    la página cuando se hace scroll, asignamos al texto el color blanco, le ponemos un sombreado negro y añadimos una altura de 
-    40 píxeles para que el sombreado quede dentro del borde.
+Cambiamos el color del fondo de la página
 
 */
 
 body {
   background-color: rgb(219, 136, 136);
+  /*background-image: linear-gradient(#990F02, #D21404);*/
 }
+
+/*
+
+  Centramos el texto del título, ponemos el fondo fris, un borde negro, con la posición sticky siempre aparecerá el título de 
+  la página cuando se hace scroll, asignamos al texto el color blanco, le ponemos un sombreado negro y añadimos una altura de 
+  40 píxeles para que el sombreado quede dentro del borde.
+
+*/
 
 h1 {
     text-align: center;
-    background-color: lightskyblue;
+    background-image: linear-gradient(lightskyblue, lightcyan);
     border: 1px dotted black;
     position: sticky;
     color: white; 
@@ -20,11 +27,23 @@ h1 {
     height: 40px;
 }
 
+/*
+
+Ponemos un borde negro a los h2, ajustamos el ancho al contenido y centramos el texto
+
+*/
+
 h2 {
     border: 1px solid black;
     width: fit-content;
     text-align: center;
 }
+
+/*
+
+Ponemos el índice de la lista en línea con un fondo determinado 
+
+*/
 
 #uno {
     float: left;
@@ -62,35 +81,87 @@ h2 {
     color: royalblue;
 }
 
+/*
+
+Cambia el color de los links que contengan "ref" y hayan sido visitados
+
+*/
+
 a[href^="ref"] :visited{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.sublista {
-    background-color: lightcyan;
+h2 {
+  background-color: lightcyan;
 }
+
+/*
+
+Cambia el color de fondo de la sublista
+
+*/
+
+.sublista {
+    background-color: lightskyblue;
+}
+
+/*
+
+Cambia el tipo de letra y el tamaño de la primera letra de cada párrafo
+
+*/
 
 p::first-letter {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
 
+/*
+
+Pone bordes a la tabla y a los td
+
+*/
+
 table, td  {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
+/*
+
+Cambia el grosor y el color del borde de los td que están en las filas pares
+
+*/
+
 tr:nth-child(even) td{
     border: 2px solid lightskyblue;
 }
+
+/*
+
+Centra el texto de las filas
+
+*/
 
 tr {
     text-align: center;
 }
 
+/*
+
+Aumenta el tamaño de la fuente al pasar el raóon encima de los enlaces
+
+*/
+
 a:hover {
     font-size: 150%;
 }
+
+/*
+
+Lo mismo que la regla anterior, pero cambiando a mayores el color de fondo y poniendo a negrita los td
+
+*/
 
 td:hover {
     background-color: lightcyan;
@@ -98,20 +169,45 @@ td:hover {
     font-size: 120%;
 }
 
+/*
+
+Quita el estilo a la lista de índice
+
+*/
+
 nav ul {
   list-style: none;
 }
+
+/*
+
+Pone margen y padding por abajo al contenedor de introducción a la página
+
+*/
 
 #introPagina {
   margin-bottom: 50px;
   padding-bottom: 100px;
 }
 
+/*
+
+Cambia el borde, lo redondea, de la primera foto que aparece en la web, la coloca a la izquierda del texto y pone un margen derecho 
+para que no esté pegado del texto
+
+*/
+
 #imgLogo {
   border-radius: 9px;
   float: left;
   margin-right: 15px;
 }
+
+/*
+
+Alinea el texto, pone un borde negro, un margen superior y una altura al footer
+
+*/
 
 footer {
   text-align: center;
@@ -120,9 +216,11 @@ footer {
   height: 60px;
 }
 
-/*footer > a {
+/*
 
-}*/
+Animación del título
+
+*/
 
 .bg-5{
 
@@ -280,6 +378,12 @@ footer {
 
 }
 
+/*
+
+Modifica el tamaño de las imágenes que estén en el footer y le da un margen a la derecha
+
+*/
+
 footer img {
   /*float: right;*/
   height: 25px;
@@ -287,6 +391,16 @@ footer img {
   margin-right: 5px;
 }
 
+/*
 
+Sitúa a la izquierda del contenedor del footer los iconos de las redes sociales y contacto de correo
 
+*/
 
+#contenedor {
+  float: left;
+}
+
+/*#degradado {
+  background-image: linear-gradient(blue, violet);
+}*/
