@@ -1,5 +1,5 @@
 body {
-    background-color: lightskyblue;
+    background-color: #CDDEFF;
 }
 
 .btnImg {
@@ -10,13 +10,18 @@ body {
 }
 
 #txtAfter {
-    color: white;
-    text-shadow: 0.2em 0.2em gray;
+    color: black;
+    text-shadow: 0.25em 0.15em white;
     font-size: x-large;
 }
 
+textarea::placeholder {
+    color: white;
+}
+
 input:focus, textarea:focus, select:focus {
-    background-color: rgb(219, 136, 136);
+    /*background-color: #FF5959;*/
+    background-color: #EEF2FF;
     border: 3px solid black;
 }
 
@@ -26,18 +31,19 @@ textarea {
 }
 
 form {
-    border: 4px solid rgb(218, 102, 102);
+    border: 4px solid #FF5959;
 }
 
 #btnSave {
     border-radius: 6px;
     border-color: #3498db;
     color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    box-shadow: 0 0 40px 40px #676FA3 inset, 0 0 0 0 #676FA3;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
 }
 
 #btnSave:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    box-shadow: 0 0 10px 0 #EEF2FF inset, 0 0 10px 4px #EEF2FF;
 }
+

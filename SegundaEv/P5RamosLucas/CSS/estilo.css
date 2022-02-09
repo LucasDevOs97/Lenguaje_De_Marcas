@@ -5,8 +5,9 @@ Cambiamos el color del fondo de la página
 */
 
 body {
-  background-color: rgb(219, 136, 136);
+  /*background-color: #FF5959;*/
   /*background-image: linear-gradient(#990F02, #D21404);*/
+  background-color: #EEF2FF;
 }
 
 /*
@@ -19,8 +20,8 @@ body {
 
 h1 {
     text-align: center;
-    background-image: linear-gradient(lightskyblue, lightcyan);
-    border: 1px dotted black;
+    background-image: linear-gradient(#CDDEFF, white);
+    border: 1px solid black;
     position: sticky;
     color: white; 
     text-shadow: black 0.1em 0.1em 0.2em;
@@ -50,7 +51,7 @@ Ponemos el índice de la lista en línea con un fondo determinado
 }
 
 #dos {
-    background-color: lightskyblue;
+    background-color: #CDDEFF;
 }
 
 #tres {
@@ -58,7 +59,7 @@ Ponemos el índice de la lista en línea con un fondo determinado
 }
 
 #uno, #tres {
-  background-color: lightcyan;
+  background-color: #676FA3;
 }
 
 #uno, #dos, #tres {
@@ -102,7 +103,7 @@ Cambia el color de fondo de la sublista
 */
 
 .sublista {
-    background-color: lightskyblue;
+    background-color: #CDDEFF;
 }
 
 /*
@@ -134,7 +135,7 @@ Cambia el grosor y el color del borde de los td que están en las filas pares
 */
 
 tr:nth-child(even) td{
-    border: 2px solid lightskyblue;
+    border: 2px solid #FF5959;
 }
 
 /*
@@ -164,7 +165,7 @@ Lo mismo que la regla anterior, pero cambiando a mayores el color de fondo y pon
 */
 
 td:hover {
-    background-color: lightcyan;
+    background-color: #CDDEFF;
     font-weight: bold;
     font-size: 120%;
 }
