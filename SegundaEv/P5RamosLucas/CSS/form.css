@@ -1,6 +1,19 @@
+/*
+
+Pone una imagen de fondo que no se repite y cubre toda la web
+
+*/
 body {
-    background-color: #CDDEFF;
+    background-image: url(../images/tex3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/*
+
+Imagen que funciona como botón para volver a la página principal
+
+*/
 
 .btnImg {
     background-image: url(../images/flecha.png);
@@ -9,30 +22,66 @@ body {
     width: 55px;
 }
 
+/*
+
+Texto que va después del botón con letra negra y sombra blanca
+
+*/
+
 #txtAfter {
     color: black;
     text-shadow: 0.25em 0.15em white;
     font-size: x-large;
 }
 
+/*
+
+Cambia el color del texto de ejemplo del área de texto
+
+*/
+
 textarea::placeholder {
     color: white;
 }
 
+/*
+
+Cambia el color de letra y modifica el borde de los inputs, áreas de texto y de los selects cuando tienen el foco, es decir, cuando 
+nos situamos en ellos
+
+*/
+
 input:focus, textarea:focus, select:focus {
-    /*background-color: #FF5959;*/
-    background-color: #EEF2FF;
+    background-color: lightcyan;
     border: 3px solid black;
 }
+
+/*
+
+Modifica el alto y el ancho del área de texto
+
+*/
 
 textarea {
     width: 800px;
     height: 366px;
 }
 
+/*
+
+Pone borde de 4 píxeles rojo al formulario
+
+*/
+
 form {
     border: 4px solid #FF5959;
 }
+
+/*
+
+Redondea el botón de guardado, le pone color al borde del mismo, le da color blanco a la letra, asigna la sombra animada del botón
+
+*/
 
 #btnSave {
     border-radius: 6px;
@@ -42,6 +91,12 @@ form {
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
 }
+
+/*
+
+Da sombra animada por fuera del botón
+
+*/
 
 #btnSave:hover {
     box-shadow: 0 0 10px 0 #EEF2FF inset, 0 0 10px 4px #EEF2FF;

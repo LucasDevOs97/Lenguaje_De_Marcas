@@ -1,8 +1,21 @@
+/*
+
+Posiciona el tootltip sobre la imagen de la que queremos que aparezca
+
+*/
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
+/*
+
+Oculta el texto del tooltip, le da un ancho, un color de fondo y de letra, centra el texto, redondea el tooltip, le da padding
+lo posiciona y lo decora
+
+*/
+
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -15,12 +28,20 @@
     z-index: 1;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     border-width: 5px;
     border-style: solid;
 }
+
+/*
+
+Cuando se pasa el cursor por encima hace que el texto sea visible
+
+*/
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
