@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+}
+
+a {
+    margin: 15px;
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+/* A partir de ahora los menús de navegación los crearemos solo utilizando enlaces */
+
+nav + div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+div > div {
+    margin: 15px;
+    background-color: aquamarine;
+}
+
+/*
+Si utilizáramos una lista para hacer el menú de navegación tendríamos que escribir el siguiente código css:
+
+ul, li {
+    display: flex;
+}*/ 
+
