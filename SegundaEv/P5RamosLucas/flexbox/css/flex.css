@@ -10,10 +10,10 @@ a {
 
 /* A partir de ahora los menús de navegación los crearemos solo utilizando enlaces */
 
-nav + div {
+/*nav + div {
     display: flex;
     flex-direction: row-reverse;
-}
+}*/
 
 div > div {
     margin: 15px;
@@ -26,4 +26,101 @@ Si utilizáramos una lista para hacer el menú de navegación tendríamos que es
 ul, li {
     display: flex;
 }*/ 
+
+/*.felx-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+}*/
+
+/*.flex-container {
+    display: flex;
+}
+
+.flex-container #container1{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container #container2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-container #container3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container #container4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container #container5{
+    display: flex;
+    justify-content: flex-end;
+}*/
+
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: DodgerBlue;
+}
+
+.flex-container1 #container1 {
+    text-align: center;
+    font-size: 300%;
+}
+
+.flex-container2 {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+  
+  .flex-container2 #container2 {
+      text-align: center;
+      font-size: 300%;
+  }
+
+  .flex-container3 {
+    display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  }
+  
+  .flex-container3 #container3 {
+      text-align: center;
+      font-size: 300%;
+  }
+
+  .flex-container4 {
+    display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: center;
+  }
+  
+  .flex-container4 #container4 {
+      text-align: center;
+      font-size: 300%;
+  }
+
+  .flex-container5 {
+    display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  }
+  
+  .flex-container5 #container5 {
+      text-align: center;
+      font-size: 300%;
+  }
+
+
 
