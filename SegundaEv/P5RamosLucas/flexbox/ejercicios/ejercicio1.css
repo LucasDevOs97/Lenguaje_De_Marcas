@@ -1,7 +1,7 @@
 .flexContainer {
     display: flex;
     background-color: aquamarine;
-    /*justify-content: space-around;*/
+    justify-content: center;
 }
 
 #divPadre {
