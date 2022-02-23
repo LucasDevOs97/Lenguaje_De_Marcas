@@ -1,0 +1,54 @@
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+.flex-container1 div, .flex-container2 div {
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.flex-container1 div {
+    height: 50px;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.flex-container1 #uno {
+    order: 3;
+}
+
+.flex-container1 #dos {
+    order: 1;
+}
+
+.flex-container1 #tres {
+    order: 4;
+    width: 240px;
+}
+
+.flex-container1 #cuatro {
+    order: 2;
+    width: 300px;
+}
+
+#uno, #ddos {
+    width: 100px;
+}
+
+#cinco, #siete {
+    width: 175px;
+}
+
+#seis {
+    width: 350px;
+}
+
+#cinco, #seis, #siete {
+    height: 200px;
+}
