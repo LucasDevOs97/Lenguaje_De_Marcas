@@ -1,32 +1,35 @@
-.div1 {
-    background-color: grey;
-}
-
-.div2 {
-    border: 5px solid lightgray;
+nav {
     display: flex;
-    /*flex-direction: row;*/
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-h1 {
+/*h1 {
     align-self: center;
     flex-direction: column;
     background-color: white;
     width: 100%;
     text-align: center;
     height: 50px;
-}
+}*/
 
 #uno {
-    flex-direction: row;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #dos {
+    display:flex;
+    flex-direction: row;
+}
+
+#dosUno {
+    background-color: aqua;
+}
+
+#dosDos {
     background-color: rgb(78, 78, 78);
 }
+
 
 /*
 
