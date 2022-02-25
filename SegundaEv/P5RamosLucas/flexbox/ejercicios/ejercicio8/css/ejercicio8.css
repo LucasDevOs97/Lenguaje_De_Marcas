@@ -1,0 +1,21 @@
+body {
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#izquierda {
+    display: flex;
+    align-items: center;
+}
+
+#derecha {
+    display: flex;
+    align-items: center;
+}
