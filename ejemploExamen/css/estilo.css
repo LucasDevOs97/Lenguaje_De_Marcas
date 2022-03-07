@@ -1,0 +1,50 @@
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.primera {
+    display: flex;
+    flex-direction: column;
+}
+
+.primera h2 {
+    text-align: center;
+}
+
+a {
+    background-color: rgb(212, 153, 26);
+    margin: 5px;
+    color: white;
+    border-radius: 8px;
+    flex-direction: row-reverse;
+}
+
+h1, .primera h2{
+    color: green;
+}
+
+.segunda h3, .tercera h3{
+    font-style: italic;
+}
+
+.primera{
+    border-radius: 6px;
+    background-color: rgb(212, 153, 26);
+}
+
+#uno{
+    order: 3;
+}
+
+#tres{
+    order: 1;
+}
+
+#dos{
+    order: 2;
+}
+
+table{
+    border: 1px solid rgb(212, 153, 26);
+}
