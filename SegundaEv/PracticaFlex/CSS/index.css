@@ -9,8 +9,28 @@ h1 {
     align-content: flex-end;
     flex-flow: column wrap;
     background-color: aqua;
-    height: 300px;
 }
+
+.divPadrePrincipal{
+    display: flex;
+    flex-direction: row;
+}
+
+.divHijo1{
+    align-items: flex-start;
+    width: 40%;
+    align-self: center;
+}
+
+.divHijo2 p{
+    width: 40%;
+}
+
+.divHijo2{
+    margin-left: auto;
+}
+
+
 
 /*.containerNav a {
     margin-left: auto;
