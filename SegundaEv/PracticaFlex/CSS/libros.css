@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    background-color: bisque;
+}
+
+.padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.sinopsis {
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.autor {
+    align-self: flex-end;
+    margin: 15px;
+}
+
+div {
+    border: 1px solid black;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.btnImg {
+    background-image: url(../images/flecha.png);
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 55px;
+}

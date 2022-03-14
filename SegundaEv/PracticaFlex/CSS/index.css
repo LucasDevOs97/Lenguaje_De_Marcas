@@ -14,23 +14,45 @@ h1 {
 .divPadrePrincipal{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .divHijo1{
     align-items: flex-start;
     width: 40%;
     align-self: center;
+    text-align: center;
+    font-style: italic;
 }
 
-.divHijo2 p{
+/*.divHijo2 p{
     width: 40%;
-}
+}*/
 
 .divHijo2{
-    margin-left: auto;
+    margin-left: 250px;
+    width: 40%;
+    text-align: center;
+    font-style: italic;
 }
 
+.fotos {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
+.fotos div{
+    margin: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section {
+    border: 1px solid black;
+}
 
 /*.containerNav a {
     margin-left: auto;
