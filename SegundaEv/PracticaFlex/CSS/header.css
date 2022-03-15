@@ -1,0 +1,18 @@
+h1 {
+    background-color: #A68DAD;
+    text-align: center;
+}
+
+.containerNav {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.containerNav a {
+    margin: 15px;
+    padding: 30px;
+    background-color: #C7B198;
+    border-radius: 6px;
+}

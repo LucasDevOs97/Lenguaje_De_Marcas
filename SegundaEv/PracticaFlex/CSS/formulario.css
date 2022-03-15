@@ -1,0 +1,23 @@
+#btnSave {
+    border-radius: 6px;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #676FA3 inset, 0 0 0 0 #676FA3;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+body {
+    background-color: #DFD3C3;
+}
+
+form {
+    background-color: #F0ECE3;
+}
+
+.btnImg {
+    background-image: url(../images/flecha.png);
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 55px;
+}

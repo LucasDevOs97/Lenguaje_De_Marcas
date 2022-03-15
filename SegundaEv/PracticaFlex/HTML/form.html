@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <header>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/formulario.css">
+
+    </header>
+
+    <body>
+
+        <input type="button"class="btnImg" onclick="history.go(-1);">
+
+        <h1>Mi Tienda</h1>
+
+        <nav class="containerNav">
+
+            <a href="#refInfo">Inicio</a>
+            <a href="#refLibros">Galería</a>
+            <a href="#refSugerencia">Contacto</a>
+
+        </nav>
+
+        <div>
+
+            <form action="principal.html" method="post">
+
+                <fieldset>
+
+                    <label for="nom">Nombre:</label>
+                    <br>
+                    <input id="nom" type="text" maxlength="16">
+
+                    <br>
+
+                    <br>
+
+                    <label for="correo">Correo electrónico: </label>
+                    <br>
+                    <input id="correo" type="email">
+
+                    <br>
+
+                    <br>
+
+                    <label for="opinion">Mensaje:</label>
+                    <br>
+                    <textarea id="opinion"></textarea>
+
+                    <br><br>
+
+                    <input id="btnSave" type="submit" value="Enviar mensaje">
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

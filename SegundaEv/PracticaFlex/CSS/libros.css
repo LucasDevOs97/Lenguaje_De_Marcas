@@ -4,7 +4,7 @@ h1 {
 }
 
 body {
-    background-color: bisque;
+    background-color: #DFD3C3;
 }
 
 .padre {
@@ -24,10 +24,10 @@ body {
     margin: 15px;
 }
 
-div {
+section div {
     border: 1px solid black;
     text-align: center;
-    background-color: aliceblue;
+    background-color: #F0ECE3;
 }
 
 .btnImg {
