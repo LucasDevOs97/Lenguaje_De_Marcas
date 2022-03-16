@@ -1,7 +1,9 @@
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
+    margin-right: 18px;
+    margin-left: 18px;
 }
 
 .zona {

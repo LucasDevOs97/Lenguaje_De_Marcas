@@ -9,10 +9,17 @@
 
 body {
     background-color: #DFD3C3;
+    /*text-align: center;*/
 }
 
 form {
     background-color: #F0ECE3;
+    display: flex;
+    justify-content: center;
+    width: 13.5%;
+    align-items: center;
+    margin-left: 617px;
+    margin-top: 70px;
 }
 
 .btnImg {
