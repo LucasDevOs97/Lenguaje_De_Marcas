@@ -1,0 +1,31 @@
+.item-cabecera{
+    grid-area: cabecera;
+}
+
+.item-menu{
+    grid-area: menu;
+}
+
+.item-presentacion{
+    grid-area: presentacion;
+}
+
+.item-main{
+    grid-area: main;
+}
+
+.item-sec1{
+    grid-area: seccion1;
+}
+
+.item-sec2{
+    grid-area: seccion2;
+}
+
+.item-footer{
+    grid-area: footer;
+}
+
+body{
+    display: grid;
+}
