@@ -1,31 +1,61 @@
 .item-cabecera{
     grid-area: cabecera;
+    background-color: aliceblue;
 }
 
 .item-menu{
     grid-area: menu;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .item-presentacion{
     grid-area: presentacion;
+    background-color: aquamarine;
 }
 
 .item-main{
     grid-area: main;
+    background-color: bisque;
 }
 
 .item-sec1{
     grid-area: seccion1;
+    background-color: yellowgreen;
 }
 
 .item-sec2{
     grid-area: seccion2;
+    background-color: yellow;
+}
+
+.item-fotos{
+    grid-area: fotos;
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 .item-footer{
     grid-area: footer;
+    background-color: brown;
 }
 
 body{
+    text-align: center;
     display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: 90px 150px 100px 100px 100px 150px auto 90px;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
+    "presentacion presentacion presentacion presentacion presentacion presentacion presentacion presentacion"
+    "menu main main main main main seccion1 seccion1"
+    "menu main main main main main seccion1 seccion1"
+    "menu main main main main main seccion2 seccion2"
+    "menu main main main main main seccion2 seccion2"
+    "fotos fotos fotos fotos fotos fotos fotos fotos"
+    "footer footer footer footer footer footer footer footer";
 }
