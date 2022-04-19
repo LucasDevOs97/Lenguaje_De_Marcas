@@ -25,7 +25,7 @@
 
 .item-cabecera{
     grid-area: cabecera;
-    background-color: aliceblue;
+    background-color: var(--color-background);
 }
 
 .item-menu{
@@ -44,6 +44,9 @@
 .item-main{
     grid-area: main;
     background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .item-sec1{
@@ -73,13 +76,19 @@
 body{
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto 200px;
     grid-template-rows: 90px 150px 100px 100px 100px 150px auto 90px;
     grid-template-areas: 
     "cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
     "presentacion presentacion presentacion presentacion presentacion presentacion presentacion presentacion"
     "menu main main main main main seccion1 seccion1"
     "menu main main main main main seccion1 seccion1"
+    "menu main main main main main seccion1 seccion1"
+    "menu main main main main main seccion1 seccion1"
+    "menu main main main main main seccion1 seccion1"
+    "menu main main main main main seccion2 seccion2"
+    "menu main main main main main seccion2 seccion2"
+    "menu main main main main main seccion2 seccion2"
     "menu main main main main main seccion2 seccion2"
     "menu main main main main main seccion2 seccion2"
     "fotos fotos fotos fotos fotos fotos fotos fotos"
@@ -89,6 +98,6 @@ body{
 .img1 img, .img2 img, .img3 img, .img4 img{
     height:300px;
     width: 200px;
-    border: 10px solid black;
+    border: 5px dotted var(--color-dark);
 }
 
