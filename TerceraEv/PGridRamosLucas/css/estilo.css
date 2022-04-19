@@ -1,3 +1,28 @@
+:root{
+    --color-primary: #7380EC;
+    --color-danger: #FF7782;
+    --color-success: #41F1B6;
+    --color-warning: #FFBB55;
+    --color-white: #FFF;
+    --color-info-dark: #7D8DA1;
+    --color-info-light: #DCE1EB;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111E88;
+    --color-dark-variant: #677483;
+    --color-background: #F6F6F9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 .item-cabecera{
     grid-area: cabecera;
     background-color: aliceblue;
@@ -33,9 +58,10 @@
 
 .item-fotos{
     grid-area: fotos;
-    background-color: violet;
+    background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -59,3 +85,10 @@ body{
     "fotos fotos fotos fotos fotos fotos fotos fotos"
     "footer footer footer footer footer footer footer footer";
 }
+
+.img1 img, .img2 img, .img3 img, .img4 img{
+    height:300px;
+    width: 200px;
+    border: 10px solid black;
+}
+
