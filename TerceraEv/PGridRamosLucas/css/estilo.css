@@ -39,6 +39,10 @@
 .item-presentacion{
     grid-area: presentacion;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--color-info-light);
 }
 
 .item-main{
@@ -47,6 +51,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 3px solid black;
+    border-radius: 6px;
 }
 
 .item-sec1{
@@ -76,8 +82,8 @@
 body{
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto 200px;
-    grid-template-rows: 90px 150px 100px 100px 100px 150px auto 90px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: 90px 150px 100px 100px 100px 150px 200px 90px;
     grid-template-areas: 
     "cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
     "presentacion presentacion presentacion presentacion presentacion presentacion presentacion presentacion"
@@ -101,3 +107,17 @@ body{
     border: 5px dotted var(--color-dark);
 }
 
+.film1, .film2, .film3, .film4{
+    border: 1px solid black;
+    border-radius: 8px;
+    height: auto;
+    margin: 5px;
+}
+
+.texto{
+    margin-left: 320px;
+}
+
+.foto-cabecera{
+    margin-right: 20px;
+}
